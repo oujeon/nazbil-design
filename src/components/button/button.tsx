@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = (props) => {
   };
   //
   return (
-    <button className="ant-btn ant-btn-primary" onClick={handleClick}>
+    <button  onClick={handleClick}>
       Primary Button
     </button>
   );

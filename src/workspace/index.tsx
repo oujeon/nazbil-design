@@ -1,4 +1,11 @@
-import { Button, Calendar, Input, Radio, Select } from "components";
+import {
+  Button,
+  Calendar,
+  InputButton,
+  InputText,
+  Radio,
+  Select,
+} from "components";
 import React, { useEffect, useState } from "react";
 
 const Workspace: React.FC = () => {
@@ -24,10 +31,6 @@ const Workspace: React.FC = () => {
       //
       setSubScreen(<Button onClick={addItem} />);
     }
-    if (menuId === "Input") {
-      //
-      setSubScreen(<Input onChange={onInputChange} />);
-    }
     if (menuId === "Radio") {
       //
       setSubScreen(
@@ -52,6 +55,15 @@ const Workspace: React.FC = () => {
         </>
       );
     }
+
+    if (menuId === "InputButton") {
+      //
+      setSubScreen(<InputButton onChange={onInputChange} />);
+    }
+    if (menuId === "InputText") {
+      //
+      setSubScreen(<InputText onChange={onInputChange} />);
+    }
   }
 
   return (
@@ -71,15 +83,6 @@ const Workspace: React.FC = () => {
                 }}
               >
                 <span> - Button -</span>
-              </button>
-            </div>
-            <div className="menu_box">
-              <button
-                onClick={() => {
-                  onMemuId("Input");
-                }}
-              >
-                <span> - Input -</span>
               </button>
             </div>
             <div className="menu_box">
@@ -107,6 +110,24 @@ const Workspace: React.FC = () => {
                 }}
               >
                 <span> - Calendar -</span>
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                onClick={() => {
+                  onMemuId("InputButton");
+                }}
+              >
+                <span> - InputButton -</span>
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                onClick={() => {
+                  onMemuId("InputText");
+                }}
+              >
+                <span> - InputText -</span>
               </button>
             </div>
           </div>
