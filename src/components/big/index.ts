@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Big from "./big";
 
-export default InputButton;
+export default Big;

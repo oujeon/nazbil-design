@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Fencedframe from "./fencedframe";
 
-export default InputButton;
+export default Fencedframe;

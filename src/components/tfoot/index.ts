@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Tfoot from "./tfoot";
 
-export default InputButton;
+export default Tfoot;

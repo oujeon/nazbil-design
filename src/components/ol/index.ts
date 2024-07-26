@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Ol from "./ol";
 
-export default InputButton;
+export default Ol;

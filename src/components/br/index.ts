@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Br from "./br";
 
-export default InputButton;
+export default Br;

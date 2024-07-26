@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Dir from "./dir";
 
-export default InputButton;
+export default Dir;

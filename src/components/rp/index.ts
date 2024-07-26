@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Rp from "./rp";
 
-export default InputButton;
+export default Rp;

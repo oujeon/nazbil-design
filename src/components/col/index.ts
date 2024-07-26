@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Col from "./col";
 
-export default InputButton;
+export default Col;

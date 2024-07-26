@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Div from "./div";
 
-export default InputButton;
+export default Div;

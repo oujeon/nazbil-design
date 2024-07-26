@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputRadio from "./inputRadio";
 
-export default InputButton;
+export default InputRadio;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputSearch from "./inputSearch";
 
-export default InputButton;
+export default InputSearch;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Caption from "./caption";
 
-export default InputButton;
+export default Caption;

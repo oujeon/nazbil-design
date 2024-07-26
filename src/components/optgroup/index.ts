@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Optgroup from "./optgroup";
 
-export default InputButton;
+export default Optgroup;

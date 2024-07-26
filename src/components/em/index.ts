@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import EmProps from "./em";
 
-export default InputButton;
+export default EmProps;

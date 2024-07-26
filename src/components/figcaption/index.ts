@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Figcaption from "./figcaption";
 
-export default InputButton;
+export default Figcaption;

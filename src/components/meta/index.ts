@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Meta from "./meta";
 
-export default InputButton;
+export default Meta ;

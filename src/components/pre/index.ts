@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Pre  from "./pre";
 
-export default InputButton;
+export default Pre ;

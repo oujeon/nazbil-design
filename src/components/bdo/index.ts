@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Bdo from "./bdo";
 
-export default InputButton;
+export default Bdo;

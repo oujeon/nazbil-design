@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Iframe from "./iframe";
 
-export default InputButton;
+export default Iframe;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputPassword from "./inputPassword";
 
-export default InputButton;
+export default InputPassword;

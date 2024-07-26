@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Map from "./map";
 
-export default InputButton;
+export default Map;

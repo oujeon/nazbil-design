@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Blockquote from "./blockquote";
 
-export default InputButton;
+export default Blockquote;

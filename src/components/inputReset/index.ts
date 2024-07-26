@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputReset from "./inputReset";
 
-export default InputButton;
+export default InputReset;

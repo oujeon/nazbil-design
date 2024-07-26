@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Hgroup from "./hgroup";
 
-export default InputButton;
+export default Hgroup;

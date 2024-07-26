@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Center from "./center";
 
-export default InputButton;
+export default Center;

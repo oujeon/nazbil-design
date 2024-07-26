@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Address from "./address";
 
-export default InputButton;
+export default Address;

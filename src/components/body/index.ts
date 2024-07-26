@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Body from "./body";
 
-export default InputButton;
+export default Body;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Head from "./head";
 
-export default InputButton;
+export default Head;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Html from "./html";
 
-export default InputButton;
+export default Html;

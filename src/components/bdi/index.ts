@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Bdi from "./bdi";
 
-export default InputButton;
+export default Bdi;

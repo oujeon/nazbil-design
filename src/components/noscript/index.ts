@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Noscript from "./noscript";
 
-export default InputButton;
+export default Noscript;

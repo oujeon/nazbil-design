@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Footer from "./footer";
 
-export default InputButton;
+export default Footer;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Ruby from "./ruby";
 
-export default InputButton;
+export default Ruby;

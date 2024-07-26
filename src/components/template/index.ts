@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Template from "./template";
 
-export default InputButton;
+export default Template;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Meter from "./meter";
 
-export default InputButton;
+export default Meter;

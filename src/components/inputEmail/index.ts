@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputEmail from "./inputEmail";
 
-export default InputButton;
+export default InputEmail;

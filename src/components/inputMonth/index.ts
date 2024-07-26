@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputMonth from "./inputMonth";
 
-export default InputButton;
+export default InputMonth;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Frameset from "./frameset";
 
-export default InputButton;
+export default Frameset;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Datalist from "./datalist";
 
-export default InputButton;
+export default Datalist;

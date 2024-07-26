@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Article from "./article";
 
-export default InputButton;
+export default Article;

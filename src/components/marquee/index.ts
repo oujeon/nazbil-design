@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Marquee from "./marquee";
 
-export default InputButton;
+export default Marquee;

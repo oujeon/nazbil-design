@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Section from "./section";
 
-export default InputButton;
+export default Section;

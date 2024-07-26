@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputWeek from "./inputWeek";
 
-export default InputButton;
+export default InputWeek;

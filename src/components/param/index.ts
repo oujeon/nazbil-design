@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Param from "./param";
 
-export default InputButton;
+export default Param;

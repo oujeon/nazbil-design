@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputRange  from "./inputRange";
 
-export default InputButton;
+export default InputRange ;

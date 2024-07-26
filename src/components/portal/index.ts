@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Portal from "./portal";
 
-export default InputButton;
+export default Portal;

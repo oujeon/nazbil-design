@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Sub from "./sub";
 
-export default InputButton;
+export default Sub;

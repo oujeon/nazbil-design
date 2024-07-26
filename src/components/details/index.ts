@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Details from "./details";
 
-export default InputButton;
+export default Details;

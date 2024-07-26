@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Plaintext from "./plaintext";
 
-export default InputButton;
+export default Plaintext;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Kbd from "./kbd";
 
-export default InputButton;
+export default Kbd;

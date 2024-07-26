@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputTel from "./inputTel";
 
-export default InputButton;
+export default InputTel;

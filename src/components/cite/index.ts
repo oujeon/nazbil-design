@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Cite from "./cite";
 
-export default InputButton;
+export default Cite;

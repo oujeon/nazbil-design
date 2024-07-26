@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputCheckbox from "./inputCheckbox";
 
-export default InputButton;
+export default InputCheckbox;

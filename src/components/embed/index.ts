@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Embed from "./embed";
 
-export default InputButton;
+export default Embed;

@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Header from "./header";
 
-export default InputButton;
+export default Header;

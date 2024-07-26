@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import InputColor from "./inputColor";
 
-export default InputButton;
+export default InputColor;

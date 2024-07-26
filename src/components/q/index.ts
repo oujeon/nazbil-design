@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Q from "./q";
 
-export default InputButton;
+export default Q;

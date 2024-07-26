@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Legend from "./legend";
 
-export default InputButton;
+export default Legend;

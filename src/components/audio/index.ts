@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Audio  from "./audio";
 
-export default InputButton;
+export default Audio;

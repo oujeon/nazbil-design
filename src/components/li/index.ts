@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Li from "./li";
 
-export default InputButton;
+export default Li;

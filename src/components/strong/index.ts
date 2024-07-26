@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Strong from "./strong";
 
-export default InputButton;
+export default Strong;

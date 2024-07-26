@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Nav from "./nav";
 
-export default InputButton;
+export default Nav;

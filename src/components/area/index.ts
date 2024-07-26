@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Area from "./area";
 
-export default InputButton;
+export default Area;

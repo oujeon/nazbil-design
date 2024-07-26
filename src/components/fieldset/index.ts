@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Fieldset from "./fieldset";
 
-export default InputButton;
+export default Fieldset;

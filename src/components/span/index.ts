@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Span from "./span";
 
-export default InputButton;
+export default Span;

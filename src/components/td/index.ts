@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Td from "./td";
 
-export default InputButton;
+export default Td;

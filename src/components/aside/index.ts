@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Aside from "./aside";
 
-export default InputButton;
+export default Aside;

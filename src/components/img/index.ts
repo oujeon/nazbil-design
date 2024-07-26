@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Img from "./img";
 
-export default InputButton;
+export default Img;

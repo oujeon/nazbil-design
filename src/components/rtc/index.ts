@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Rtc from "./rtc";
 
-export default InputButton;
+export default Rtc;

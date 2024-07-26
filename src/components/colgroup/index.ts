@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Colgroup from "./colgroup";
 
-export default InputButton;
+export default Colgroup;

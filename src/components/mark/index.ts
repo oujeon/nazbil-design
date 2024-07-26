@@ -1,3 +1,3 @@
-import InputButton from "./inputButton";
+import Mark from "./mark";
 
-export default InputButton;
+export default Mark;
