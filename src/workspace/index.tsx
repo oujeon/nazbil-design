@@ -22,7 +22,7 @@ const Workspace: React.FC = () => {
   function onMemuId(menuId: string) {
     if (menuId === "Button") {
       //
-      <A/>
+      <A />;
     }
     if (menuId === "Radio") {
       //
@@ -56,58 +56,10 @@ const Workspace: React.FC = () => {
         <div id="container">
           <div id="left_container">
             <div className="menu_box">
-              <button
-                onClick={() => {
-                  onMemuId("Button");
-                }}
-              >
-                <span> - Button -</span>
-              </button>
+              <h1>Application</h1>
             </div>
             <div className="menu_box">
-              <button
-                onClick={() => {
-                  onMemuId("Radio");
-                }}
-              >
-                <span> - Radio -</span>
-              </button>
-            </div>
-            <div className="menu_box">
-              <button
-                onClick={() => {
-                  onMemuId("Select");
-                }}
-              >
-                <span> - Select -</span>
-              </button>
-            </div>
-            <div className="menu_box">
-              <button
-                onClick={() => {
-                  onMemuId("Calendar");
-                }}
-              >
-                <span> - Calendar -</span>
-              </button>
-            </div>
-            <div className="menu_box">
-              <button
-                onClick={() => {
-                  onMemuId("InputButton");
-                }}
-              >
-                <span> - InputButton -</span>
-              </button>
-            </div>
-            <div className="menu_box">
-              <button
-                onClick={() => {
-                  onMemuId("InputText");
-                }}
-              >
-                <span> - InputText -</span>
-              </button>
+              <h1>Basic</h1>
             </div>
           </div>
           <div id="right_container">{subScreen}</div>
