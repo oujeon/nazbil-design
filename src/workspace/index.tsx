@@ -1,11 +1,4 @@
-import {
-  Button,
-  Calendar,
-  InputButton,
-  InputText,
-  Radio,
-  Select,
-} from "components";
+import { A } from "components/basic";
 import React, { useEffect, useState } from "react";
 
 const Workspace: React.FC = () => {
@@ -29,40 +22,26 @@ const Workspace: React.FC = () => {
   function onMemuId(menuId: string) {
     if (menuId === "Button") {
       //
-      setSubScreen(<Button onClick={addItem} />);
+      <A/>
     }
     if (menuId === "Radio") {
       //
-      setSubScreen(
-        <>
-          <Radio text="라디오 버튼1" onChange={onRadioChange} />
-        </>
-      );
+      setSubScreen(<></>);
     }
     if (menuId === "Select") {
       //
-      setSubScreen(
-        <>
-          <Select />
-        </>
-      );
+      setSubScreen(<></>);
     }
     if (menuId === "Calendar") {
       //
-      setSubScreen(
-        <>
-          <Calendar />
-        </>
-      );
+      setSubScreen(<></>);
     }
 
     if (menuId === "InputButton") {
       //
-      setSubScreen(<InputButton onChange={onInputChange} />);
     }
     if (menuId === "InputText") {
       //
-      setSubScreen(<InputText onChange={onInputChange} />);
     }
   }
 
