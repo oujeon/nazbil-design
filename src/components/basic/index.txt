@@ -1,0 +1,1520 @@
+  <div
+            id="left_container"
+            className="menu_box"
+            style={{ overflowX: "hidden", overflowY: "auto" }}
+          >
+            <div className="menu_box">
+              <h1>Application</h1>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Basic");
+                }}
+              >
+                A
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Abbr");
+                }}
+              >
+                Abbr
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Acronym");
+                }}
+              >
+                Acronym
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Address");
+                }}
+              >
+                Address
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Area");
+                }}
+              >
+                Area
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Article");
+                }}
+              >
+                Article
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Aside");
+                }}
+              >
+                Aside
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Audio");
+                }}
+              >
+                Audio
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("B");
+                }}
+              >
+                B
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Base");
+                }}
+              >
+                Base
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Big");
+                }}
+              >
+                Bdi
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Basic");
+                }}
+              >
+                Bdo
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Basic");
+                }}
+              >
+                Big
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Blockquote");
+                }}
+              >
+                Blockquote
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Body");
+                }}
+              >
+                Body
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Br");
+                }}
+              >
+                Br
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Button");
+                }}
+              >
+                Button
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Calendar");
+                }}
+              >
+                Calendar
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Canvas");
+                }}
+              >
+                Canvas
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Caption");
+                }}
+              >
+                Caption
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Center");
+                }}
+              >
+                Center
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Code");
+                }}
+              >
+                Code
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Col");
+                }}
+              >
+                Col
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Colgroup");
+                }}
+              >
+                Colgroup
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Data");
+                }}
+              >
+                Data
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Datalist");
+                }}
+              >
+                Datalist
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Dd");
+                }}
+              >
+                Dd
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Del");
+                }}
+              >
+                Del
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Details");
+                }}
+              >
+                Details
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Dfn");
+                }}
+              >
+                Dfn
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Dialog");
+                }}
+              >
+                Dialog
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Dir");
+                }}
+              >
+                Dir
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Div");
+                }}
+              >
+                Div
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Dl");
+                }}
+              >
+                Dl
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Dt");
+                }}
+              >
+                Dt
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Em");
+                }}
+              >
+                Em
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Embed");
+                }}
+              >
+                Embed
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Fencedframe");
+                }}
+              >
+                Fencedframe
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Fieldset");
+                }}
+              >
+                Fieldset
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Figcaption");
+                }}
+              >
+                Figcaption
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Figure");
+                }}
+              >
+                Figure
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Font");
+                }}
+              >
+                Font
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Footer");
+                }}
+              >
+                Footer
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Form");
+                }}
+              >
+                Form
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Frame");
+                }}
+              >
+                Frame
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Frameset");
+                }}
+              >
+                Frameset
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("H1");
+                }}
+              >
+                H1
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("H2");
+                }}
+              >
+                H2
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("H3");
+                }}
+              >
+                H3
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("H4");
+                }}
+              >
+                H4
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("H5");
+                }}
+              >
+                H5
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("H6");
+                }}
+              >
+                H6
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Head");
+                }}
+              >
+                Head
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Header");
+                }}
+              >
+                Header
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Hgroup");
+                }}
+              >
+                Hgroup
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Hr");
+                }}
+              >
+                Hr
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Html");
+                }}
+              >
+                Html
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("I");
+                }}
+              >
+                I
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("BasIframeic");
+                }}
+              >
+                Iframe
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Img");
+                }}
+              >
+                Img
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputCheckbox");
+                }}
+              >
+                InputCheckbox
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputColor");
+                }}
+              >
+                InputColor
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("BasInputDateic");
+                }}
+              >
+                InputDate
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputDatetimeLocal");
+                }}
+              >
+                InputDatetimeLocal
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputEmail");
+                }}
+              >
+                InputEmail
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputFile");
+                }}
+              >
+                InputFile
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputHidden");
+                }}
+              >
+                InputHidden
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputImage");
+                }}
+              >
+                InputImage
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputMonth");
+                }}
+              >
+                InputMonth
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputNumber");
+                }}
+              >
+                InputNumber
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputPassword");
+                }}
+              >
+                InputPassword
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputRadio");
+                }}
+              >
+                InputRadio
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputRange");
+                }}
+              >
+                InputRange
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputReset");
+                }}
+              >
+                InputReset
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputSearch");
+                }}
+              >
+                InputSearch
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputSubmit");
+                }}
+              >
+                InputSubmit
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputTel");
+                }}
+              >
+                InputTel
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputText");
+                }}
+              >
+                InputText
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputTime");
+                }}
+              >
+                InputTime
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputUrl");
+                }}
+              >
+                InputUrl
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("InputWeek");
+                }}
+              >
+                InputWeek
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Ins");
+                }}
+              >
+                Ins
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("BasiKbdc");
+                }}
+              >
+                Kbd
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Label");
+                }}
+              >
+                Label
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Legend");
+                }}
+              >
+                Legend
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Li");
+                }}
+              >
+                Li
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Link");
+                }}
+              >
+                Link
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Main");
+                }}
+              >
+                Main
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Map");
+                }}
+              >
+                Map
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Mark");
+                }}
+              >
+                Mark
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Marquee");
+                }}
+              >
+                Marquee
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Menu");
+                }}
+              >
+                Menu
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Meta");
+                }}
+              >
+                Meta
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Meter");
+                }}
+              >
+                Meter
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Nav");
+                }}
+              >
+                Nav
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Nobr");
+                }}
+              >
+                Nobr
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Noembed");
+                }}
+              >
+                Noembed
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Noframes");
+                }}
+              >
+                Noframes
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Noscript");
+                }}
+              >
+                Noscript
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Object");
+                }}
+              >
+                Object
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Ol");
+                }}
+              >
+                Ol
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Optgroup");
+                }}
+              >
+                Optgroup
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Option");
+                }}
+              >
+                Option
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Output");
+                }}
+              >
+                Output
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("P");
+                }}
+              >
+                P
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Param");
+                }}
+              >
+                Param
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Picture");
+                }}
+              >
+                Picture
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Plaintext");
+                }}
+              >
+                Plaintext
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Portal");
+                }}
+              >
+                Portal
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Pre");
+                }}
+              >
+                Pre
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Progress");
+                }}
+              >
+                Progress
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Q");
+                }}
+              >
+                Q
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Rb");
+                }}
+              >
+                Rb
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Rp");
+                }}
+              >
+                Rp
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Rt");
+                }}
+              >
+                Rt
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Rtc");
+                }}
+              >
+                Rtc
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Ruby");
+                }}
+              >
+                Ruby
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("S");
+                }}
+              >
+                S
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Samp");
+                }}
+              >
+                Samp
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Script");
+                }}
+              >
+                Script
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Search");
+                }}
+              >
+                Search
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Section");
+                }}
+              >
+                Section
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Select");
+                }}
+              >
+                Select
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Slot");
+                }}
+              >
+                Slot
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Small");
+                }}
+              >
+                Small
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Source");
+                }}
+              >
+                Source
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Span");
+                }}
+              >
+                Span
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Strike");
+                }}
+              >
+                Strike
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Strong");
+                }}
+              >
+                Strong
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Style");
+                }}
+              >
+                Style
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Sub");
+                }}
+              >
+                Sub
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Summary");
+                }}
+              >
+                Summary
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Sup");
+                }}
+              >
+                Sup
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Table");
+                }}
+              >
+                Table
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Td");
+                }}
+              >
+                Td
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Template");
+                }}
+              >
+                Template
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Textarea");
+                }}
+              >
+                Textarea
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Tfoot");
+                }}
+              >
+                Tfoot
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Th");
+                }}
+              >
+                Th
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Thead");
+                }}
+              >
+                Thead
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Time");
+                }}
+              >
+                Time
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Title");
+                }}
+              >
+                Title
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Tr");
+                }}
+              >
+                Tr
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Track");
+                }}
+              >
+                Track
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Tt");
+                }}
+              >
+                Tt
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("U");
+                }}
+              >
+                U
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Ul");
+                }}
+              >
+                Ul
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Var");
+                }}
+              >
+                Var
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Video");
+                }}
+              >
+                Video
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Wbr");
+                }}
+              >
+                Wbr
+              </button>
+            </div>
+            <div className="menu_box">
+              <button
+                style={{ width: "150px" }}
+                onClick={() => {
+                  onApplicationMenu("Xmp");
+                }}
+              >
+                Xmp
+              </button>
+            </div>
+          </div>
+         
