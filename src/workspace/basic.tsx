@@ -152,468 +152,482 @@ import {
   Xmp,
 } from "components/basic";
 
-import React, { useState} from "react";
+import React, { useRef, useState } from "react";
 
 const Basic: React.FC = () => {
- const [subScreen , setSubScreen ] = useState(<></>);
+  const [subScreen, setSubScreen] = useState(<></>);
+
+  const aRef = useRef<HTMLAnchorElement>();
   //
   function onMenu(menuId: string) {
     if (menuId === "A") {
-     setSubScreen(<A />);
+      setSubScreen(
+        <A
+          href={"//www.google.com"}
+          target={"_block"}
+          text={"Google"}
+          classes={"sample"}
+          ref={aRef as React.Ref<HTMLAnchorElement>}
+          onClick={() => {
+            console.log(aRef.current);
+            aRef.current?.classList.add("sample2");
+            console.log(aRef.current?.className);
+          }}
+        />
+      );
     }
     if (menuId === "Abbr") {
-     setSubScreen(<Abbr />);
+      setSubScreen(<Abbr />);
     }
     if (menuId === "Acronym") {
-     setSubScreen(<Acronym />);
+      setSubScreen(<Acronym />);
     }
     if (menuId === "Address") {
-     setSubScreen(<Address />);
+      setSubScreen(<Address />);
     }
     if (menuId === "Area") {
-     setSubScreen(<Area />);
+      setSubScreen(<Area />);
     }
     if (menuId === "Article") {
-     setSubScreen(<Article />);
+      setSubScreen(<Article />);
     }
     if (menuId === "Aside") {
-     setSubScreen(<Aside />);
+      setSubScreen(<Aside />);
     }
     if (menuId === "Audio") {
-     setSubScreen(<Audio />);
+      setSubScreen(<Audio />);
     }
     if (menuId === "B") {
-     setSubScreen(<B />);
+      setSubScreen(<B />);
     }
     if (menuId === "Base") {
-     setSubScreen(<Base />);
+      setSubScreen(<Base />);
     }
     if (menuId === "Bdi") {
-     setSubScreen(<Bdi />);
+      setSubScreen(<Bdi />);
     }
     if (menuId === "Bdo") {
-     setSubScreen(<Bdo />);
+      setSubScreen(<Bdo />);
     }
     if (menuId === "Big") {
-     setSubScreen(<Big />);
+      setSubScreen(<Big />);
     }
     if (menuId === "Blockquote") {
-     setSubScreen(<Blockquote />);
+      setSubScreen(<Blockquote />);
     }
     if (menuId === "Body") {
-     setSubScreen(<Body />);
+      setSubScreen(<Body />);
     }
     if (menuId === "Br") {
-     setSubScreen(<Br />);
+      setSubScreen(<Br />);
     }
     if (menuId === "Button") {
-     setSubScreen(<Button />);
+      setSubScreen(<Button />);
     }
     if (menuId === "Calendar") {
-     setSubScreen(<Calendar />);
+      setSubScreen(<Calendar />);
     }
     if (menuId === "Canvas") {
-     setSubScreen(<Canvas />);
+      setSubScreen(<Canvas />);
     }
     if (menuId === "Caption") {
-     setSubScreen(<Caption />);
+      setSubScreen(<Caption />);
     }
     if (menuId === "Center") {
-     setSubScreen(<Center />);
+      setSubScreen(<Center />);
     }
     if (menuId === "Code") {
-     setSubScreen(<Code />);
+      setSubScreen(<Code />);
     }
     if (menuId === "Col") {
-     setSubScreen(<Col />);
+      setSubScreen(<Col />);
     }
     if (menuId === "Colgroup") {
-     setSubScreen(<Colgroup />);
+      setSubScreen(<Colgroup />);
     }
     if (menuId === "Data") {
-     setSubScreen(<Data />);
+      setSubScreen(<Data />);
     }
     if (menuId === "Datalist") {
-     setSubScreen(<Datalist />);
+      setSubScreen(<Datalist />);
     }
     if (menuId === "Dd") {
-     setSubScreen(<Dd />);
+      setSubScreen(<Dd />);
     }
     if (menuId === "Del") {
-     setSubScreen(<Del />);
+      setSubScreen(<Del />);
     }
     if (menuId === "Details") {
-     setSubScreen(<Details />);
+      setSubScreen(<Details />);
     }
     if (menuId === "Dfn") {
-     setSubScreen(<Dfn />);
+      setSubScreen(<Dfn />);
     }
     if (menuId === "Dialog") {
-     setSubScreen(<Dialog />);
+      setSubScreen(<Dialog />);
     }
     if (menuId === "Dir") {
-     setSubScreen(<Dir />);
+      setSubScreen(<Dir />);
     }
     if (menuId === "Div") {
-     setSubScreen(<Div />);
+      setSubScreen(<Div />);
     }
     if (menuId === "Dl") {
-     setSubScreen(<Dl />);
+      setSubScreen(<Dl />);
     }
     if (menuId === "Dt") {
-     setSubScreen(<Dt />);
+      setSubScreen(<Dt />);
     }
     if (menuId === "Em") {
-     setSubScreen(<Em />);
+      setSubScreen(<Em />);
     }
     if (menuId === "Embed") {
-     setSubScreen(<Embed />);
+      setSubScreen(<Embed />);
     }
     if (menuId === "Fencedframe") {
-     setSubScreen(<Fencedframe />);
+      setSubScreen(<Fencedframe />);
     }
     if (menuId === "Fieldset") {
-     setSubScreen(<Fieldset />);
+      setSubScreen(<Fieldset />);
     }
     if (menuId === "Figcaption") {
-     setSubScreen(<Figcaption />);
+      setSubScreen(<Figcaption />);
     }
     if (menuId === "Figure") {
-     setSubScreen(<Figure />);
+      setSubScreen(<Figure />);
     }
     if (menuId === "Font") {
-     setSubScreen(<Font />);
+      setSubScreen(<Font />);
     }
     if (menuId === "Footer") {
-     setSubScreen(<Footer />);
+      setSubScreen(<Footer />);
     }
     if (menuId === "Form") {
-     setSubScreen(<Form />);
+      setSubScreen(<Form />);
     }
     if (menuId === "Frame") {
-     setSubScreen(<Frame />);
+      setSubScreen(<Frame />);
     }
     if (menuId === "Frameset") {
-     setSubScreen(<Frameset />);
+      setSubScreen(<Frameset />);
     }
     if (menuId === "H1") {
-     setSubScreen(<H1 />);
+      setSubScreen(<H1 />);
     }
     if (menuId === "H2") {
-     setSubScreen(<H2 />);
+      setSubScreen(<H2 />);
     }
     if (menuId === "H3") {
-     setSubScreen(<H3 />);
+      setSubScreen(<H3 />);
     }
     if (menuId === "H4") {
-     setSubScreen(<H4 />);
+      setSubScreen(<H4 />);
     }
     if (menuId === "H5") {
-     setSubScreen(<H5 />);
+      setSubScreen(<H5 />);
     }
     if (menuId === "H6") {
-     setSubScreen(<H6 />);
+      setSubScreen(<H6 />);
     }
     if (menuId === "Head") {
-     setSubScreen(<Head />);
+      setSubScreen(<Head />);
     }
     if (menuId === "Header") {
-     setSubScreen(<Header />);
+      setSubScreen(<Header />);
     }
     if (menuId === "Hgroup") {
-     setSubScreen(<Hgroup />);
+      setSubScreen(<Hgroup />);
     }
     if (menuId === "Hr") {
-     setSubScreen(<Hr />);
+      setSubScreen(<Hr />);
     }
     if (menuId === "Html") {
-     setSubScreen(<Html />);
+      setSubScreen(<Html />);
     }
     if (menuId === "I") {
-     setSubScreen(<I />);
+      setSubScreen(<I />);
     }
     if (menuId === "Iframe") {
-     setSubScreen(<Iframe />);
+      setSubScreen(<Iframe />);
     }
     if (menuId === "Img") {
-     setSubScreen(<Img />);
+      setSubScreen(<Img />);
     }
     if (menuId === "InputCheckbox") {
-     setSubScreen(<InputCheckbox />);
+      setSubScreen(<InputCheckbox />);
     }
     if (menuId === "InputColor") {
-     setSubScreen(<InputColor />);
+      setSubScreen(<InputColor />);
     }
     if (menuId === "InputDate") {
-     setSubScreen(<InputDate />);
+      setSubScreen(<InputDate />);
     }
     if (menuId === "InputDatetimeLocal") {
-     setSubScreen(<InputDatetimeLocal />);
+      setSubScreen(<InputDatetimeLocal />);
     }
     if (menuId === "InputEmail") {
-     setSubScreen(<InputEmail />);
+      setSubScreen(<InputEmail />);
     }
     if (menuId === "InputFile") {
-     setSubScreen(<InputFile />);
+      setSubScreen(<InputFile />);
     }
     if (menuId === "InputHidden") {
-     setSubScreen(<InputHidden />);
+      setSubScreen(<InputHidden />);
     }
     if (menuId === "InputImage") {
-     setSubScreen(<InputImage />);
+      setSubScreen(<InputImage />);
     }
     if (menuId === "InputMonth") {
-     setSubScreen(<InputMonth />);
+      setSubScreen(<InputMonth />);
     }
     if (menuId === "InputNumber") {
-     setSubScreen(<InputNumber />);
+      setSubScreen(<InputNumber />);
     }
     if (menuId === "InputPassword") {
-     setSubScreen(<InputPassword />);
+      setSubScreen(<InputPassword />);
     }
     if (menuId === "InputRadio") {
-     setSubScreen(<InputRadio />);
+      setSubScreen(<InputRadio />);
     }
     if (menuId === "InputRange") {
-     setSubScreen(<InputRange />);
+      setSubScreen(<InputRange />);
     }
     if (menuId === "InputReset") {
-     setSubScreen(<InputReset />);
+      setSubScreen(<InputReset />);
     }
     if (menuId === "InputSearch") {
-     setSubScreen(<InputSearch />);
+      setSubScreen(<InputSearch />);
     }
     if (menuId === "InputSubmit") {
-     setSubScreen(<InputSubmit />);
+      setSubScreen(<InputSubmit />);
     }
     if (menuId === "InputTel") {
-     setSubScreen(<InputTel />);
+      setSubScreen(<InputTel />);
     }
     if (menuId === "InputText") {
-     setSubScreen(<InputText />);
+      setSubScreen(<InputText />);
     }
     if (menuId === "InputTime") {
-     setSubScreen(<InputTime />);
+      setSubScreen(<InputTime />);
     }
     if (menuId === "InputUrl") {
-     setSubScreen(<InputUrl />);
+      setSubScreen(<InputUrl />);
     }
     if (menuId === "InputWeek") {
-     setSubScreen(<InputWeek />);
+      setSubScreen(<InputWeek />);
     }
     if (menuId === "Ins") {
-     setSubScreen(<Ins />);
+      setSubScreen(<Ins />);
     }
     if (menuId === "Kbd") {
-     setSubScreen(<Kbd />);
+      setSubScreen(<Kbd />);
     }
     if (menuId === "Label") {
-     setSubScreen(<Label />);
+      setSubScreen(<Label />);
     }
     if (menuId === "Legend") {
-     setSubScreen(<Legend />);
+      setSubScreen(<Legend />);
     }
     if (menuId === "Li") {
-     setSubScreen(<Li />);
+      setSubScreen(<Li />);
     }
     if (menuId === "Link") {
-     setSubScreen(<Link />);
+      setSubScreen(<Link />);
     }
     if (menuId === "Main") {
-     setSubScreen(<Main />);
+      setSubScreen(<Main />);
     }
     if (menuId === "Map") {
-     setSubScreen(<Map />);
+      setSubScreen(<Map />);
     }
     if (menuId === "Mark") {
-     setSubScreen(<Mark />);
+      setSubScreen(<Mark />);
     }
     if (menuId === "Marquee") {
-     setSubScreen(<Marquee />);
+      setSubScreen(<Marquee />);
     }
     if (menuId === "Menu") {
-     setSubScreen(<Menu />);
+      setSubScreen(<Menu />);
     }
     if (menuId === "Meta") {
-     setSubScreen(<Meta />);
+      setSubScreen(<Meta />);
     }
     if (menuId === "Meter") {
-     setSubScreen(<Meter />);
+      setSubScreen(<Meter />);
     }
     if (menuId === "Nav") {
-     setSubScreen(<Nav />);
+      setSubScreen(<Nav />);
     }
     if (menuId === "Nobr") {
-     setSubScreen(<Nobr />);
+      setSubScreen(<Nobr />);
     }
     if (menuId === "Noembed") {
-     setSubScreen(<Noembed />);
+      setSubScreen(<Noembed />);
     }
     if (menuId === "Noframes") {
-     setSubScreen(<Noframes />);
+      setSubScreen(<Noframes />);
     }
     if (menuId === "Noscript") {
-     setSubScreen(<Noscript />);
+      setSubScreen(<Noscript />);
     }
     if (menuId === "Object") {
-     setSubScreen(<Object />);
+      setSubScreen(<Object />);
     }
     if (menuId === "Ol") {
-     setSubScreen(<Ol />);
+      setSubScreen(<Ol />);
     }
     if (menuId === "Optgroup") {
-     setSubScreen(<Optgroup />);
+      setSubScreen(<Optgroup />);
     }
     if (menuId === "Option") {
-     setSubScreen(<Option />);
+      setSubScreen(<Option />);
     }
     if (menuId === "Output") {
-     setSubScreen(<Output />);
+      setSubScreen(<Output />);
     }
     if (menuId === "P") {
-     setSubScreen(<P />);
+      setSubScreen(<P />);
     }
     if (menuId === "Param") {
-     setSubScreen(<Param />);
+      setSubScreen(<Param />);
     }
     if (menuId === "Picture") {
-     setSubScreen(<Picture />);
+      setSubScreen(<Picture />);
     }
     if (menuId === "Plaintext") {
-     setSubScreen(<Plaintext />);
+      setSubScreen(<Plaintext />);
     }
     if (menuId === "Portal") {
-     setSubScreen(<Portal />);
+      setSubScreen(<Portal />);
     }
     if (menuId === "Pre") {
-     setSubScreen(<Pre />);
+      setSubScreen(<Pre />);
     }
     if (menuId === "Progress") {
-     setSubScreen(<Progress />);
+      setSubScreen(<Progress />);
     }
     if (menuId === "Q") {
-     setSubScreen(<Q />);
+      setSubScreen(<Q />);
     }
     if (menuId === "Rb") {
-     setSubScreen(<Rb />);
+      setSubScreen(<Rb />);
     }
     if (menuId === "Rp") {
-     setSubScreen(<Rp />);
+      setSubScreen(<Rp />);
     }
     if (menuId === "Rt") {
-     setSubScreen(<Rt />);
+      setSubScreen(<Rt />);
     }
     if (menuId === "Rtc") {
-     setSubScreen(<Rtc />);
+      setSubScreen(<Rtc />);
     }
     if (menuId === "Ruby") {
-     setSubScreen(<Ruby />);
+      setSubScreen(<Ruby />);
     }
     if (menuId === "S") {
-     setSubScreen(<S />);
+      setSubScreen(<S />);
     }
     if (menuId === "Samp") {
-     setSubScreen(<Samp />);
+      setSubScreen(<Samp />);
     }
     if (menuId === "Script") {
-     setSubScreen(<Script />);
+      setSubScreen(<Script />);
     }
     if (menuId === "Search") {
-     setSubScreen(<Search />);
+      setSubScreen(<Search />);
     }
     if (menuId === "Section") {
-     setSubScreen(<Section />);
+      setSubScreen(<Section />);
     }
     if (menuId === "Select") {
-     setSubScreen(<Select />);
+      setSubScreen(<Select />);
     }
     if (menuId === "Slot") {
-     setSubScreen(<Slot />);
+      setSubScreen(<Slot />);
     }
     if (menuId === "Small") {
-     setSubScreen(<Small />);
+      setSubScreen(<Small />);
     }
     if (menuId === "Source") {
-     setSubScreen(<Source />);
+      setSubScreen(<Source />);
     }
     if (menuId === "Span") {
-     setSubScreen(<Span />);
+      setSubScreen(<Span />);
     }
     if (menuId === "Strike") {
-     setSubScreen(<Strike />);
+      setSubScreen(<Strike />);
     }
     if (menuId === "Strong") {
-     setSubScreen(<Strong />);
+      setSubScreen(<Strong />);
     }
     if (menuId === "Style") {
-     setSubScreen(<Style />);
+      setSubScreen(<Style />);
     }
     if (menuId === "Sub") {
-     setSubScreen(<Sub />);
+      setSubScreen(<Sub />);
     }
     if (menuId === "Summary") {
-     setSubScreen(<Summary />);
+      setSubScreen(<Summary />);
     }
     if (menuId === "Sup") {
-     setSubScreen(<Sup />);
+      setSubScreen(<Sup />);
     }
     if (menuId === "Table") {
-     setSubScreen(<Table />);
+      setSubScreen(<Table />);
     }
     if (menuId === "Td") {
-     setSubScreen(<Td />);
+      setSubScreen(<Td />);
     }
     if (menuId === "Template") {
-     setSubScreen(<Template />);
+      setSubScreen(<Template />);
     }
     if (menuId === "Textarea") {
-     setSubScreen(<Textarea />);
+      setSubScreen(<Textarea />);
     }
     if (menuId === "Tfoot") {
-     setSubScreen(<Tfoot />);
+      setSubScreen(<Tfoot />);
     }
     if (menuId === "Th") {
-     setSubScreen(<Th />);
+      setSubScreen(<Th />);
     }
     if (menuId === "Thead") {
-     setSubScreen(<Thead />);
+      setSubScreen(<Thead />);
     }
     if (menuId === "Time") {
-     setSubScreen(<Time />);
+      setSubScreen(<Time />);
     }
     if (menuId === "Title") {
-     setSubScreen(<Title />);
+      setSubScreen(<Title />);
     }
     if (menuId === "Tr") {
-     setSubScreen(<Tr />);
+      setSubScreen(<Tr />);
     }
     if (menuId === "Track") {
-     setSubScreen(<Track />);
+      setSubScreen(<Track />);
     }
     if (menuId === "Tt") {
-     setSubScreen(<Tt />);
+      setSubScreen(<Tt />);
     }
     if (menuId === "U") {
-     setSubScreen(<U />);
+      setSubScreen(<U />);
     }
     if (menuId === "Ul") {
-     setSubScreen(<Ul />);
+      setSubScreen(<Ul />);
     }
     if (menuId === "Var") {
-     setSubScreen(<Var />);
+      setSubScreen(<Var />);
     }
     if (menuId === "Video") {
-     setSubScreen(<Video />);
+      setSubScreen(<Video />);
     }
     if (menuId === "Wbr") {
-     setSubScreen(<Wbr />);
+      setSubScreen(<Wbr />);
     }
     if (menuId === "Xmp") {
-     setSubScreen(<Xmp />);
+      setSubScreen(<Xmp />);
     }
   }
- 
- 
+
   return (
     <>
       <div
@@ -628,7 +642,7 @@ const Basic: React.FC = () => {
           <button
             style={{ width: "150px" }}
             onClick={() => {
-              onMenu("Basic");
+              onMenu("A");
             }}
           >
             A
