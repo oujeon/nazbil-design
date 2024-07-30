@@ -1,10 +1,15 @@
 import React from "react";
 
-export interface BrProps {}
+export interface BrProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+}
 
-const Br: React.FC<BrProps> = (props) => {
+const Br = React.forwardRef<HTMLBRElement, BrProps>((props, ref) => {
   //
-  return <br />;
-};
+  const { inlineStyle, classes } = props;
+  //
+  return <br className={classes} ref={ref} style={{ ...inlineStyle }} />;
+});
 
 export default Br;

@@ -13,8 +13,8 @@ const Workspace: React.FC = () => {
           </div>
         </header>
         <div id="container">
-          <Application />
           <Basic />
+          <Application />
         </div>
       </div>
     </div>

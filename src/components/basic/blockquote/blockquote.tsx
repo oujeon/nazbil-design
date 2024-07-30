@@ -1,17 +1,27 @@
 import React from "react";
 
-export interface BlockquoteProps {}
+export interface BlockquoteProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+  cite?: string;
+}
 
-const Blockquote: React.FC<BlockquoteProps> = (props) => {
-  //
-  return (
-    <blockquote cite="https://www.huxley.net/bnw/four.html">
-      <p>
-        Words can be like X-rays, if you use them properly—they’ll go through
-        anything. You read and you’re pierced.
-      </p>
-    </blockquote>
-  );
-};
+const Blockquote = React.forwardRef<HTMLQuoteElement, BlockquoteProps>(
+  (props, ref) => {
+    const { inlineStyle, classes, children, cite } = props;
+    //
+    return (
+      <blockquote
+        className={classes}
+        ref={ref}
+        style={{ ...inlineStyle }}
+        cite={cite}
+      >
+        {children}
+      </blockquote>
+    );
+  }
+);
 
 export default Blockquote;

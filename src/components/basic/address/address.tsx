@@ -1,16 +1,19 @@
 import React from "react";
 
-export interface AddressProps {}
+export interface AddressProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const Address: React.FC<AddressProps> = (props) => {
+const Address = React.forwardRef<HTMLElement, AddressProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
   return (
-    <address>
-      <a href="mailto:jim@example.com">jim@example.com</a>
-      <br />
-      <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+    <address className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
     </address>
   );
-};
+});
 
 export default Address;

@@ -1,14 +1,10 @@
 import React from "react";
 
-export interface BigProps { 
-}
+export interface BigProps {}
 
-const Big : React.FC<BigProps> = (props) => {
- 
+const Big: React.FC<BigProps> = (props) => {
   //
-  return (
-    <big>This whole sentence is in bigger letters.</big>
-  );
+  return <>empty</>;
 };
 
 export default Big;

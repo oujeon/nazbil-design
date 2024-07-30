@@ -1,14 +1,25 @@
 import React from "react";
 
-export interface AudioProps { 
+export interface AudioProps {
+  src: string;
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
 }
 
-const Audio : React.FC<AudioProps> = (props) => {
- 
+const Audio = React.forwardRef<HTMLAudioElement, AudioProps>((props, ref) => {
+  const { src, inlineStyle, classes } = props;
+  //
+  console.log("audio src : ", src);
   //
   return (
-    <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+    <audio
+      className={classes}
+      ref={ref}
+      style={{ ...inlineStyle }}
+      controls
+      src={src}
+    />
   );
-};
+});
 
 export default Audio;

@@ -1,18 +1,28 @@
 import React from "react";
 
-export interface AreaProps {}
+export interface AreaProps {
+  shape: string;
+  coords: string;
+  href?: string;
+  alt?: string;
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+}
 
-const Area: React.FC<AreaProps> = (props) => {
+const Area = React.forwardRef<HTMLElement, AreaProps>((props, ref) => {
+  const { shape, coords, href, alt, inlineStyle, classes } = props;
+
   //
   return (
     <area
-      shape="poly"
-      coords="129,0,260,95,129,138"
-      href="https://developer.mozilla.org/docs/Web/HTTP"
-      target="_blank"
-      alt="HTTP"
+      shape={shape}
+      coords={coords}
+      href={href}
+      alt={alt}
+      style={{ ...inlineStyle }}
+      className={classes}
     />
   );
-};
+});
 
 export default Area;

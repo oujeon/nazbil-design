@@ -16,10 +16,10 @@ import {
   Body,
   Br,
   Button,
-  Calendar,
   Canvas,
   Caption,
   Center,
+  Cite,
   Code,
   Col,
   Colgroup,
@@ -168,6 +168,7 @@ const Basic: React.FC = () => {
           text={"Google"}
           classes={"sample"}
           ref={aRef as React.Ref<HTMLAnchorElement>}
+          inlineStyle={{ color: "red" }}
           onClick={() => {
             console.log(aRef.current);
             aRef.current?.classList.add("sample2");
@@ -177,43 +178,99 @@ const Basic: React.FC = () => {
       );
     }
     if (menuId === "Abbr") {
-      setSubScreen(<Abbr />);
+      setSubScreen(<Abbr text={"Abbr"} />);
     }
     if (menuId === "Acronym") {
       setSubScreen(<Acronym />);
     }
     if (menuId === "Address") {
-      setSubScreen(<Address />);
+      setSubScreen(
+        <Address>
+          <a href="//developer.mozilla.org">MDN</a>
+        </Address>
+      );
     }
     if (menuId === "Area") {
-      setSubScreen(<Area />);
+      setSubScreen(
+        <>
+          <map name="primary">
+            <Area
+              shape="circle"
+              coords="75,75,75"
+              href="left.html"
+              alt="Click to go Left"
+            />
+            <Area
+              shape="circle"
+              coords="275,75,75"
+              href="right.html"
+              alt="Click to go Right"
+            />
+          </map>
+          <img
+            useMap="#primary"
+            src="https://dummyimage.com/350x150"
+            alt="350 x 150 pic"
+          />
+        </>
+      );
     }
     if (menuId === "Article") {
-      setSubScreen(<Article />);
+      setSubScreen(
+        <Article>
+          <h2>03 March 2018</h2>
+          <p>Rain.</p>
+        </Article>
+      );
     }
     if (menuId === "Aside") {
-      setSubScreen(<Aside />);
+      setSubScreen(
+        <Aside>
+          <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+        </Aside>
+      );
     }
     if (menuId === "Audio") {
-      setSubScreen(<Audio />);
+      setSubScreen(
+        <Audio src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" />
+      );
     }
     if (menuId === "B") {
-      setSubScreen(<B />);
+      setSubScreen(<B>The Bring Attention To element</B>);
     }
     if (menuId === "Base") {
-      setSubScreen(<Base />);
+      setSubScreen(
+        <>
+          <head>
+            <Base target="_blank" href="https://www.w3schools.com/" />
+          </head>
+          <img
+            src="images/stickman.gif"
+            width="24"
+            height="39"
+            alt="Stickman"
+          />
+        </>
+      );
     }
     if (menuId === "Bdi") {
-      setSubScreen(<Bdi />);
+      setSubScreen(<Bdi>The Bidirectional Isolate element</Bdi>);
     }
     if (menuId === "Bdo") {
-      setSubScreen(<Bdo />);
+      setSubScreen(<Bdo>The Bidirectional Text Override element</Bdo>);
     }
     if (menuId === "Big") {
       setSubScreen(<Big />);
     }
     if (menuId === "Blockquote") {
-      setSubScreen(<Blockquote />);
+      setSubScreen(
+        <Blockquote cite="https://datatracker.ietf.org/doc/html/rfc1149">
+          <p>
+            Words can be like X-rays, if you use them properly—they’ll go
+            through anything. You read and you’re pierced.
+          </p>
+        </Blockquote>
+      );
     }
     if (menuId === "Body") {
       setSubScreen(<Body />);
@@ -222,22 +279,41 @@ const Basic: React.FC = () => {
       setSubScreen(<Br />);
     }
     if (menuId === "Button") {
-      setSubScreen(<Button />);
-    }
-    if (menuId === "Calendar") {
-      setSubScreen(<Calendar />);
+      setSubScreen(
+        <Button
+          type={"button"}
+          onClick={() => {
+            alert("button");
+          }}
+        >
+          The Button element
+        </Button>
+      );
     }
     if (menuId === "Canvas") {
-      setSubScreen(<Canvas />);
+      setSubScreen(
+        <Canvas width="150" height="150">
+          The Graphics Canvas element
+        </Canvas>
+      );
     }
     if (menuId === "Caption") {
-      setSubScreen(<Caption />);
+      setSubScreen(<Caption>The Table Caption element</Caption>);
     }
     if (menuId === "Center") {
       setSubScreen(<Center />);
     }
+    if (menuId === "Cite") {
+      setSubScreen(
+        <Cite>
+          <a href="http://www.george-orwell.org/1984/0.html">
+            Nineteen Eighty-Four
+          </a>
+        </Cite>
+      );
+    }
     if (menuId === "Code") {
-      setSubScreen(<Code />);
+      setSubScreen(<Code>push()</Code>);
     }
     if (menuId === "Col") {
       setSubScreen(<Col />);
@@ -742,7 +818,7 @@ const Basic: React.FC = () => {
           <button
             style={{ width: "150px" }}
             onClick={() => {
-              onMenu("Big");
+              onMenu("Bdi");
             }}
           >
             Bdi
@@ -752,7 +828,7 @@ const Basic: React.FC = () => {
           <button
             style={{ width: "150px" }}
             onClick={() => {
-              onMenu("Basic");
+              onMenu("Bdo");
             }}
           >
             Bdo
@@ -762,7 +838,7 @@ const Basic: React.FC = () => {
           <button
             style={{ width: "150px" }}
             onClick={() => {
-              onMenu("Basic");
+              onMenu("Big");
             }}
           >
             Big
@@ -812,16 +888,6 @@ const Basic: React.FC = () => {
           <button
             style={{ width: "150px" }}
             onClick={() => {
-              onMenu("Calendar");
-            }}
-          >
-            Calendar
-          </button>
-        </div>
-        <div className="menu_box">
-          <button
-            style={{ width: "150px" }}
-            onClick={() => {
               onMenu("Canvas");
             }}
           >
@@ -846,6 +912,16 @@ const Basic: React.FC = () => {
             }}
           >
             Center
+          </button>
+        </div>
+        <div className="menu_box">
+          <button
+            style={{ width: "150px" }}
+            onClick={() => {
+              onMenu("Cite");
+            }}
+          >
+            Cite
           </button>
         </div>
         <div className="menu_box">

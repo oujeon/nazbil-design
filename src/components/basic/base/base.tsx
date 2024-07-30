@@ -1,14 +1,24 @@
 import React from "react";
 
-export interface BaseProps { 
+export interface BaseProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  href: string;
+  target?: string;
 }
 
-const Base: React.FC<BaseProps> = (props) => {
- 
+const Base = React.forwardRef<HTMLBaseElement, BaseProps>((props, ref) => {
+  const { inlineStyle, classes, href, target } = props;
   //
   return (
-    <base href="https://www.example.com/" />
+    <base
+      target={target}
+      href={href}
+      className={classes}
+      ref={ref}
+      style={{ ...inlineStyle }}
+    />
   );
-};
+});
 
 export default Base;

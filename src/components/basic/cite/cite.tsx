@@ -1,14 +1,20 @@
 import React from "react";
 
-export interface CiteProps { 
+export interface CiteProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
 }
 
-const Cite : React.FC<CiteProps> = (props) => {
- 
+const Cite = React.forwardRef<HTMLElement, CiteProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
+
   //
   return (
-    <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite>
+    <cite className={classes} ref={ref} style={{ ...inlineStyle }}> 
+      {children}
+    </cite>
   );
-};
+});
 
 export default Cite;

@@ -1,14 +1,19 @@
 import React from "react";
 
-export interface AsideProps {}
+export interface AsideProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const Aside: React.FC<AsideProps> = (props) => {
+const Aside = React.forwardRef<HTMLElement, AsideProps>((props, ref) => {
+  const {  inlineStyle, classes,children } = props;
   //
   return (
-    <aside>
-      <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    <aside className={classes} ref={ref} style={{ ...inlineStyle }}>
+          {children}
     </aside>
   );
-};
+});
 
 export default Aside;

@@ -1,10 +1,20 @@
 import React from "react";
 
-export interface BProps {}
+export interface BProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children: React.ReactNode;
+}
 
-const B: React.FC<BProps> = (props) => {
+const B = React.forwardRef<HTMLElement, BProps>((props, ref) => {
   //
-  return <b>chemistry</b>;
-};
+  const { inlineStyle, classes, children } = props;
+  //
+  return (
+    <b className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </b>
+  );
+});
 
 export default B;

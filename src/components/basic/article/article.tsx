@@ -1,15 +1,19 @@
 import React from "react";
 
-export interface ArticleProps {}
+export interface ArticleProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const Article : React.FC<ArticleProps> = (props) => {
+const Article = React.forwardRef<HTMLElement, ArticleProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
-  return ( 
-      <article>
-        <h2>03 March 2018</h2>
-        <p>Rain.</p>
-      </article> 
+  return (
+    <article className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </article>
   );
-};
+});
 
 export default Article;

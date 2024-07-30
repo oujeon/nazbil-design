@@ -1,14 +1,16 @@
 import React from "react";
 
-export interface ColProps { 
+export interface ColProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
 }
 
-const Col : React.FC<ColProps> = (props) => {
- 
-  //
-  return (
-    <col />
-  );
-};
+const Col = React.forwardRef<HTMLElement, ColProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
 
-export default Col ;
+  //
+  return <></>;
+});
+
+export default Col;

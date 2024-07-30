@@ -1,16 +1,18 @@
 import React from "react";
 
-export interface CaptionProps { 
+export interface CaptionProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
 }
 
-const Caption : React.FC<CaptionProps> = (props) => {
- 
-  //
+const Caption = React.forwardRef<HTMLElement, CaptionProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   return (
-    <caption>
-    He-Man and Skeletor facts
-  </caption>
+    <caption className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </caption>
   );
-};
+});
 
 export default Caption;
