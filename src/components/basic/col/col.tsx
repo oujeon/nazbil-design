@@ -10,7 +10,7 @@ const Col = React.forwardRef<HTMLElement, ColProps>((props, ref) => {
   const { inlineStyle, classes, children } = props;
 
   //
-  return <></>;
+  return <>empty</>;
 });
 
 export default Col;

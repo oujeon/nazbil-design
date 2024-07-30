@@ -4,7 +4,7 @@ export interface StrikeProps {}
 
 const Strike: React.FC<StrikeProps> = (props) => {
   //
-  return <></>;
+  return <>empty</>;
 };
 
 export default Strike;

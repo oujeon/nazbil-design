@@ -4,7 +4,7 @@ export interface XmpProps {}
 
 const Xmp: React.FC<XmpProps> = (props) => {
   //
-  return <></>;
+  return <>empty</>;
 };
 
 export default Xmp;

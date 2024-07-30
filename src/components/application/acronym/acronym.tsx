@@ -4,7 +4,7 @@ export interface AcronymProps {}
 
 const Acronym: React.FC<AcronymProps> = (props) => {
   //
-  return <></>;
+  return <>empty</>;
 };
 
 export default Acronym;

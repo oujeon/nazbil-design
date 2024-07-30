@@ -6,7 +6,7 @@ export interface RbProps {
 const Rb : React.FC<RbProps> = (props) => { 
   //
   return (
-    <></>
+    <>empty</>
   );
 };
 

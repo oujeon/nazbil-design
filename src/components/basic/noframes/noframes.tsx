@@ -4,7 +4,7 @@ export interface NoframesProps {}
 
 const Noframes: React.FC<NoframesProps> = (props) => {
   //
-  return <></>;
+  return <>empty</>;
 };
 
 export default Noframes;

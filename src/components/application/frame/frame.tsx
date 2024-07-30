@@ -4,7 +4,7 @@ export interface FrameProps {}
 
 const Frame: React.FC<FrameProps> = (props) => {
   //
-  return <></>;
+  return <>empty</>;
 };
 
 export default Frame;

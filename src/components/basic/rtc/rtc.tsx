@@ -4,7 +4,7 @@ export interface RtcProps {}
 
 const Rtc: React.FC<RtcProps> = (props) => {
   //
-  return <></>;
+  return <>empty</>;
 };
 
 export default Rtc;

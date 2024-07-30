@@ -4,7 +4,7 @@ export interface FramesetProps {}
 
 const Frameset: React.FC<FramesetProps> = (props) => {
   //
-  return <></>;
+  return <>empty</>;
 };
 
 export default Frameset;

@@ -4,7 +4,7 @@ export interface MarqueeProps {}
 
 const Marquee: React.FC<MarqueeProps> = (props) => {
   //
-  return <></>;
+  return <>empty</>;
 };
 
 export default Marquee;

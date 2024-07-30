@@ -9,7 +9,7 @@ export interface CenterProps {
 const Center = React.forwardRef<HTMLElement, CenterProps>((props, ref) => {
   const { inlineStyle, classes, children } = props;
   //
-  return <></>;
+  return <>empty</>;
 });
 
 export default Center;
