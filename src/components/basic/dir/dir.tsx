@@ -2,9 +2,9 @@ import React from "react";
 
 export interface DirProps {}
 
-const Dir: React.FC<DirProps> = (props) => {
+const Dir = React.forwardRef<HTMLElement, DirProps>((props, ref) => {
   //
-  return <Dir />;
-};
+  return <>The Directory element</>;
+});
 
 export default Dir;

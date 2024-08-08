@@ -1,14 +1,29 @@
 import React from "react";
 
-export interface EmbedProps { 
+export interface EmbedProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  type?: string;
+  src?: string;
+  width?: string;
+  height?: string;
 }
 
-const Embed : React.FC<EmbedProps> = (props) => {
- 
+const Embed = React.forwardRef<HTMLEmbedElement, EmbedProps>((props, ref) => {
+  const { inlineStyle, classes, type, src, width, height } = props;
+
   //
   return (
-    <embed type="video/webm" src="/media/cc0-videos/flower.mp4" width="250" height="200" />
+    <embed
+      type={type}
+      src={src}
+      width={width}
+      height={height}
+      className={classes}
+      ref={ref}
+      style={{ ...inlineStyle }}
+    />
   );
-};
+});
 
-export default Embed ;
+export default Embed;

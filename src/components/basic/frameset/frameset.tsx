@@ -2,9 +2,9 @@ import React from "react";
 
 export interface FramesetProps {}
 
-const Frameset: React.FC<FramesetProps> = (props) => {
+const Frameset = React.forwardRef<HTMLElement, FramesetProps>((props, ref) => {
   //
-  return <>empty</>;
-};
+  return <>delete element</>;
+});
 
 export default Frameset;

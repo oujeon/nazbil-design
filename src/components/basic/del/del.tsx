@@ -1,14 +1,19 @@
 import React from "react";
 
-export interface DelProps { 
+export interface DelProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
 }
 
-const Del : React.FC<DelProps> = (props) => {
- 
+const Del = React.forwardRef<HTMLModElement, DelProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
   return (
-    <del>nothing</del>
+    <del className={classes} ref={ref} style={{ ...inlineStyle }}> 
+      {children}
+    </del>
   );
-};
+});
 
-export default Del ;
+export default Del;

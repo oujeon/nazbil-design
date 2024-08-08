@@ -2,9 +2,9 @@ import React from "react";
 
 export interface FrameProps {}
 
-const Frame: React.FC<FrameProps> = (props) => {
+const Frame = React.forwardRef<HTMLElement, FrameProps>((props, ref) => {
   //
-  return <>empty</>;
-};
+  return <>delete element</>;
+});
 
 export default Frame;

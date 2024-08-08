@@ -2,9 +2,9 @@ import React from "react";
 
 export interface DdProps {}
 
-const Dd: React.FC<DdProps> = (props) => {
+const Dd= React.forwardRef<HTMLElement, DdProps>((props, ref) => {
   //
-  return <dd>A large feline inhabiting Bodmin Moor.</dd>;
-};
+  return <></>;
+});
 
 export default Dd;

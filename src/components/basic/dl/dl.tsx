@@ -1,21 +1,17 @@
 import React from "react";
 
-export interface DlProps {}
+export interface DlProps { classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;}
 
-const Dl: React.FC<DlProps> = (props) => {
+const Dl = React.forwardRef<HTMLDListElement, DlProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
   return (
-    <dl>
-      <dt>Beast of Bodmin</dt>
-      <dd>A large feline inhabiting Bodmin Moor.</dd>
-
-      <dt>Morgawr</dt>
-      <dd>A sea serpent.</dd>
-
-      <dt>Owlman</dt>
-      <dd>A giant owl-like creature.</dd>
+    <dl className={classes} ref={ref} style={{ ...inlineStyle }}>
+   {children}
     </dl>
   );
-};
+});
 
 export default Dl;

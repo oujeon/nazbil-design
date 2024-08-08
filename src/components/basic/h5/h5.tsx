@@ -1,14 +1,20 @@
 import React from "react";
 
-export interface H5Props { 
+export interface H5Props {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
 }
 
-const H5 : React.FC<H5Props> = (props) => {
- 
+const H5 = React.forwardRef<HTMLHeadingElement, H5Props>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
+
   //
   return (
-    <h5>Beetles</h5>
+    <h5 className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </h5>
   );
-};
+});
 
 export default H5;

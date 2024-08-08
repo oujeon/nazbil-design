@@ -1,15 +1,17 @@
 import React from "react";
 
-export interface DivProps {}
+export interface DivProps {  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;}
 
-const Div: React.FC<DivProps> = (props) => {
+const Div = React.forwardRef<HTMLDivElement, DivProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
   return (
-    <div>
-      <img src="/media/examples/leopard.jpg" alt="An intimidating leopard." />
-      <p>Beware of the leopard</p>
+    <div  className={classes} ref={ref} style={{ ...inlineStyle }}>
+          {children}
     </div>
   );
-};
+});
 
 export default Div;

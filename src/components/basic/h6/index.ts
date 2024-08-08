@@ -1,3 +1,3 @@
-import H5 from "./h5";
+import H6 from "./h6";
 
-export default H5;
+export default H6;

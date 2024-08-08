@@ -2,11 +2,11 @@ import React from "react";
 
 export interface FencedframeProps {}
 
-const Fencedframe: React.FC<FencedframeProps> = (props) => {
+const Fencedframe= React.forwardRef<HTMLElement, FencedframeProps>((props, ref) => {
   //
   return (
-    <>empty</>
+    <>The Fenced Frame element</>
   );
-};
+});
 
 export default Fencedframe;

@@ -1,18 +1,27 @@
 import React from "react";
 
-export interface DatalistProps {}
+export interface DatalistProps {
+  id?: string;
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const Datalist: React.FC<DatalistProps> = (props) => {
-  //
-  return (
-    <datalist id="ice-cream-flavors">
-      <option value="Chocolate"></option>
-      <option value="Coconut"></option>
-      <option value="Mint"></option>
-      <option value="Strawberry"></option>
-      <option value="Vanilla"></option>
-    </datalist>
-  );
-};
+const Datalist = React.forwardRef<HTMLDataListElement, DatalistProps>(
+  (props, ref) => {
+    const { id, inlineStyle, classes, children } = props;
+    //
+    return (
+      <datalist
+        id={id}
+        className={classes}
+        ref={ref}
+        style={{ ...inlineStyle }}
+      >
+        {children}
+      </datalist>
+    );
+  }
+);
 
 export default Datalist;

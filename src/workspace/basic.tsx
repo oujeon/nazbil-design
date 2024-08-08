@@ -322,64 +322,173 @@ const Basic: React.FC = () => {
       setSubScreen(<Colgroup />);
     }
     if (menuId === "Data") {
-      setSubScreen(<Data />);
+      setSubScreen(<Data value="398">Mini Ketchup</Data>);
     }
     if (menuId === "Datalist") {
-      setSubScreen(<Datalist />);
+      setSubScreen(
+        <>
+          <label htmlFor="ice-cream-choice">Choose a flavor:</label>
+          <input
+            list="ice-cream-flavors"
+            id="ice-cream-choice"
+            name="ice-cream-choice"
+          />
+          <Datalist id="ice-cream-flavors">
+            <option value="Chocolate"></option>
+            <option value="Coconut"></option>
+            <option value="Mint"></option>
+            <option value="Strawberry"></option>
+            <option value="Vanilla"></option>
+          </Datalist>
+        </>
+      );
     }
     if (menuId === "Dd") {
       setSubScreen(<Dd />);
     }
     if (menuId === "Del") {
-      setSubScreen(<Del />);
+      setSubScreen(<Del>The Deleted Text element</Del>);
     }
     if (menuId === "Details") {
-      setSubScreen(<Details />);
+      setSubScreen(
+        <Details>
+          <summary>System Requirements</summary>
+          <p>
+            Requires a computer running an operating system. The computer must
+            have some memory and ideally some kind of long-term storage. An
+            input device as well as some form of output device is recommended.
+          </p>
+        </Details>
+      );
     }
     if (menuId === "Dfn") {
-      setSubScreen(<Dfn />);
+      setSubScreen(<Dfn>The Definition element</Dfn>);
     }
     if (menuId === "Dialog") {
-      setSubScreen(<Dialog />);
+      setSubScreen(
+        <Dialog>
+          <p>Greetings, one and all!</p>
+          <form method="dialog">
+            <button>OK</button>
+          </form>
+        </Dialog>
+      );
     }
     if (menuId === "Dir") {
       setSubScreen(<Dir />);
     }
     if (menuId === "Div") {
-      setSubScreen(<Div />);
+      setSubScreen(<Div>The Content Division element</Div>);
     }
     if (menuId === "Dl") {
-      setSubScreen(<Dl />);
+      setSubScreen(
+        <Dl>
+          <dt>Beast of Bodmin</dt>
+          <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+          <dt>Morgawr</dt>
+          <dd>A sea serpent.</dd>
+
+          <dt>Owlman</dt>
+          <dd>A giant owl-like creature.</dd>
+        </Dl>
+      );
     }
     if (menuId === "Dt") {
-      setSubScreen(<Dt />);
+      setSubScreen(
+        <dl>
+          <Dt> Denim (semigloss finish)</Dt>
+          <dd>Ceiling</dd>
+        </dl>
+      );
     }
     if (menuId === "Em") {
-      setSubScreen(<Em />);
+      setSubScreen(<Em>The Emphasis element</Em>);
     }
     if (menuId === "Embed") {
-      setSubScreen(<Embed />);
+      setSubScreen(
+        <Embed
+          type="video/webm"
+          src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+          width="250"
+          height="200"
+        />
+      );
     }
     if (menuId === "Fencedframe") {
       setSubScreen(<Fencedframe />);
     }
     if (menuId === "Fieldset") {
-      setSubScreen(<Fieldset />);
+      setSubScreen(
+        <Fieldset>
+          <legend>Choose your favorite monster</legend>
+          <input type="radio" id="kraken" name="monster" value="K" />
+          <label htmlFor="kraken">Kraken</label>
+          <br />
+          <input type="radio" id="sasquatch" name="monster" value="S" />
+          <label htmlFor="sasquatch">Sasquatch</label>
+          <br />
+          <input type="radio" id="mothman" name="monster" value="M" />
+          <label htmlFor="mothman">Mothman</label>
+        </Fieldset>
+      );
     }
     if (menuId === "Figcaption") {
-      setSubScreen(<Figcaption />);
+      setSubScreen(
+        <figure>
+          <img
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg"
+            alt="Elephant at sunset"
+          />
+          <Figcaption>An elephant at sunset</Figcaption>
+        </figure>
+      );
     }
     if (menuId === "Figure") {
-      setSubScreen(<Figure />);
+      setSubScreen(
+        <Figure>
+          <img
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg"
+            alt="Elephant at sunset"
+          />
+          <Figcaption>An elephant at sunset</Figcaption>
+        </Figure>
+      );
     }
     if (menuId === "Font") {
       setSubScreen(<Font />);
     }
     if (menuId === "Footer") {
-      setSubScreen(<Footer />);
+      setSubScreen(
+        <article>
+          <h1>How to be a wizard</h1>
+          <ol>
+            <li>Grow a long, majestic beard.</li>
+            <li>Wear a tall, pointed hat.</li>
+            <li>Have I mentioned the beard?</li>
+          </ol>
+          <Footer>
+            <p>© 2018 Gandalf</p>
+          </Footer>
+        </article>
+      );
     }
     if (menuId === "Form") {
-      setSubScreen(<Form />);
+      setSubScreen(
+        <Form action="" method="get">
+          <div>
+            <label htmlFor="name">Enter your name: </label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div>
+            <label htmlFor="email">Enter your email: </label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div>
+            <input type="submit" value="Subscribe!" />
+          </div>
+        </Form>
+      );
     }
     if (menuId === "Frame") {
       setSubScreen(<Frame />);
@@ -388,22 +497,22 @@ const Basic: React.FC = () => {
       setSubScreen(<Frameset />);
     }
     if (menuId === "H1") {
-      setSubScreen(<H1 />);
+      setSubScreen(<H1>The HTML Section Heading elements</H1>);
     }
     if (menuId === "H2") {
-      setSubScreen(<H2 />);
+      setSubScreen(<H2>The HTML Section Heading elements</H2>);
     }
     if (menuId === "H3") {
-      setSubScreen(<H3 />);
+      setSubScreen(<H3>The HTML Section Heading elements</H3>);
     }
     if (menuId === "H4") {
-      setSubScreen(<H4 />);
+      setSubScreen(<H4>The HTML Section Heading elements</H4>);
     }
     if (menuId === "H5") {
-      setSubScreen(<H5 />);
+      setSubScreen(<H5>The HTML Section Heading elements</H5>);
     }
     if (menuId === "H6") {
-      setSubScreen(<H6 />);
+      setSubScreen(<H6>The HTML Section Heading elements</H6>);
     }
     if (menuId === "Head") {
       setSubScreen(<Head />);

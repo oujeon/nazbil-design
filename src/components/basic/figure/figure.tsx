@@ -1,18 +1,19 @@
 import React from "react";
 
-export interface FigureProps {}
+export interface FigureProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const Figure: React.FC<FigureProps> = (props) => {
+const Figure = React.forwardRef<HTMLElement, FigureProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
   return (
-    <figure>
-      <img
-        src="/media/cc0-images/elephant-660-480.jpg"
-        alt="Elephant at sunset"
-      />
-      <figcaption>An elephant at sunset</figcaption>
+    <figure className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
     </figure>
   );
-};
+});
 
 export default Figure;

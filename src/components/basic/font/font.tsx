@@ -2,9 +2,10 @@ import React from "react";
 
 export interface FontProps {}
 
-const Font: React.FC<FontProps> = (props) => {
+const Font = React.forwardRef<HTMLElement, FontProps>((props, ref) => {
+ 
   //
-  return <> </>;
-};
+  return <>delete element </>;
+});
 
 export default Font;
