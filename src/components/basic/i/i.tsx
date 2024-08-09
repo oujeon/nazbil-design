@@ -1,10 +1,19 @@
 import React from "react";
 
-export interface IProps {}
+export interface IProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const I: React.FC<IProps> = (props) => {
+const I = React.forwardRef<HTMLElement, IProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
-  return <i>This can't be real!</i>;
-};
+  return (
+    <i className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </i>
+  );
+});
 
 export default I;

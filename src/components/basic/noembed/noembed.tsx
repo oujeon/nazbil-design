@@ -2,9 +2,8 @@ import React from "react";
 
 export interface NoembedProps {}
 
-const Noembed: React.FC<NoembedProps> = (props) => {
+const Noembed = React.forwardRef<HTMLElement, NoembedProps>((props, ref) => {
   //
-  return <> </>;
-};
-
+  return <>delete element</>;
+});
 export default Noembed;

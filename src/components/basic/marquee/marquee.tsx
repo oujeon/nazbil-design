@@ -2,9 +2,9 @@ import React from "react";
 
 export interface MarqueeProps {}
 
-const Marquee: React.FC<MarqueeProps> = (props) => {
+const Marquee = React.forwardRef<HTMLElement, MarqueeProps>((props, ref) => {
   //
-  return <>empty</>;
-};
+  return <>delete element</>;
+});
 
 export default Marquee;

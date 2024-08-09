@@ -1,15 +1,25 @@
 import React from "react";
 
-export interface ImgProps {}
+export interface ImgProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+  src?: string;
+  alt?: string;
+}
 
-const Img: React.FC<ImgProps> = (props) => {
+const Img = React.forwardRef<HTMLImageElement, ImgProps>((props, ref) => {
+  const { inlineStyle, classes, src, alt } = props;
   //
   return (
     <img
-      src="/media/cc0-images/grapefruit-slice-332-332.jpg"
-      alt="Grapefruit slice atop a pile of other slices"
-    />
+      src={src}
+      alt={alt}
+      className={classes}
+      ref={ref}
+      style={{ ...inlineStyle }}
+    ></img>
   );
-};
+});
 
 export default Img;

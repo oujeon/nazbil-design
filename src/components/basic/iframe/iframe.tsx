@@ -1,18 +1,33 @@
 import React from "react";
 
-export interface IframeProps {}
+export interface IframeProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+  id?: string;
+  title?: string;
+  width?: string;
+  height?: string;
+  src?: string;
+}
 
-const Iframe: React.FC<IframeProps> = (props) => {
-  //
-  return (
-    <iframe
-      id="inlineFrameExample"
-      title="Inline Frame Example"
-      width="300"
-      height="200"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
-    ></iframe>
-  );
-};
+const Iframe = React.forwardRef<HTMLIFrameElement, IframeProps>(
+  (props, ref) => {
+    const { inlineStyle, classes, id, title, width, height, src } = props;
+    //
+    return (
+      <iframe
+        id={id}
+        title={title}
+        width={width}
+        height={height}
+        src={src}
+        className={classes}
+        ref={ref}
+        style={{ ...inlineStyle }}
+      ></iframe>
+    );
+  }
+);
 
 export default Iframe;

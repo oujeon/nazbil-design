@@ -1,13 +1,12 @@
 import React from "react";
 
-export interface PlaintextProps { 
-}
+export interface PlaintextProps {}
 
-const Plaintext : React.FC<PlaintextProps> = (props) => { 
-  //
-  return (
-    <>empty</>
-  );
-};
+const Plaintext = React.forwardRef<HTMLElement, PlaintextProps>(
+  (props, ref) => {
+    //
+    return <>delete element</>;
+  }
+);
 
-export default Plaintext ;
+export default Plaintext;

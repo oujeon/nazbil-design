@@ -1,14 +1,25 @@
 import React from "react";
 
-export interface InsProps {}
+export interface InsProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+  cite?: string; 
+}
 
-const Ins : React.FC<InsProps> = (props) => {
+const Ins = React.forwardRef<HTMLModElement, InsProps>((props, ref) => {
+  const { inlineStyle, classes, children, cite  } = props;
   //
   return (
-    <ins cite="../howtobeawizard.html">
-      <p>“A wizard is never late …”</p>
+    <ins
+      cite={cite} 
+      className={classes}
+      ref={ref}
+      style={{ ...inlineStyle }}
+    >
+      {children}
     </ins>
   );
-};
+});
 
 export default Ins;

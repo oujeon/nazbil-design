@@ -2,9 +2,10 @@ import React from "react";
 
 export interface HtmlProps {}
 
-const Html: React.FC<HtmlProps> = (props) => {
+const Html = React.forwardRef<HTMLHtmlElement, HtmlProps>((props, ref) => {
+  
   //
-  return <html></html>;
-};
+  return <></>;
+});
 
 export default Html;

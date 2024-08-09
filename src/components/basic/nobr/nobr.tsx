@@ -2,9 +2,9 @@ import React from "react";
 
 export interface NobrProps {}
 
-const Nobr: React.FC<NobrProps> = (props) => {
+const Nobr = React.forwardRef<HTMLElement, NobrProps>((props, ref) => {
   //
-  return <> </>;
-};
+  return <>delete element</>;
+});
 
 export default Nobr;

@@ -2,9 +2,9 @@ import React from "react";
 
 export interface NoframesProps {}
 
-const Noframes: React.FC<NoframesProps> = (props) => {
+const Noframes = React.forwardRef<HTMLElement, NoframesProps>((props, ref) => {
   //
-  return <>empty</>;
-};
+  return <>delete element</>;
+});
 
 export default Noframes;

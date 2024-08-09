@@ -2,9 +2,9 @@ import React from "react";
 
 export interface MetaProps {}
 
-const Meta : React.FC<MetaProps> = (props) => {
+const Meta = React.forwardRef<HTMLElement, MetaProps>((props, ref) => {
   //
-  return <meta />;
-};
+  return <></>;
+});
 
-export default Meta ;
+export default Meta;

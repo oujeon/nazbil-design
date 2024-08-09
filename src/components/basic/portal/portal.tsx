@@ -2,9 +2,9 @@ import React from "react";
 
 export interface PortalProps {}
 
-const Portal: React.FC<PortalProps> = (props) => {
+const Portal = React.forwardRef<HTMLElement, PortalProps>((props, ref) => {
   //
-  return <>empty</>;
-};
+  return <>delete element</>;
+});
 
 export default Portal;

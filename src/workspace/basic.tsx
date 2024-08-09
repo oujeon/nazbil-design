@@ -86,8 +86,6 @@ import {
   Legend,
   Li,
   Link,
-  Main,
-  Map,
   Mark,
   Marquee,
   Menu,
@@ -515,28 +513,71 @@ const Basic: React.FC = () => {
       setSubScreen(<H6>The HTML Section Heading elements</H6>);
     }
     if (menuId === "Head") {
-      setSubScreen(<Head />);
+      setSubScreen(
+        <Head>
+          <meta charSet="UTF-8" />
+          <meta name="viewport" content="width=device-width" />
+          <title>Document title</title>
+        </Head>
+      );
     }
     if (menuId === "Header") {
-      setSubScreen(<Header />);
+      setSubScreen(
+        <Header>
+          <a href="#">Cute Puppies Express!</a>
+        </Header>
+      );
     }
     if (menuId === "Hgroup") {
-      setSubScreen(<Hgroup />);
+      setSubScreen(
+        <Hgroup>
+          <h1>Frankenstein</h1>
+          <p>Or: The Modern Prometheus</p>
+        </Hgroup>
+      );
     }
     if (menuId === "Hr") {
-      setSubScreen(<Hr />);
+      setSubScreen(
+        <>
+          <p>
+            §1: The first rule of Fight Club is: You do not talk about Fight
+            Club.
+          </p>
+
+          <Hr />
+
+          <p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+        </>
+      );
     }
     if (menuId === "Html") {
       setSubScreen(<Html />);
     }
     if (menuId === "I") {
-      setSubScreen(<I />);
+      setSubScreen(
+        <p>
+          I looked at it and thought <I>This can't be real!</I>
+        </p>
+      );
     }
     if (menuId === "Iframe") {
-      setSubScreen(<Iframe />);
+      setSubScreen(
+        <Iframe
+          id="inlineFrameExample"
+          title="Inline Frame Example"
+          width="300"
+          height="200"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+        ></Iframe>
+      );
     }
     if (menuId === "Img") {
-      setSubScreen(<Img />);
+      setSubScreen(
+        <Img
+          src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
+          alt="Grapefruit slice atop a pile of other slices"
+        />
+      );
     }
     if (menuId === "InputCheckbox") {
       setSubScreen(<InputCheckbox />);
@@ -602,46 +643,202 @@ const Basic: React.FC = () => {
       setSubScreen(<InputWeek />);
     }
     if (menuId === "Ins") {
-      setSubScreen(<Ins />);
+      setSubScreen(
+        <>
+          <p>“You're late!”</p>
+          <del>
+            <p>“I apologize for the delay.”</p>
+          </del>
+          <Ins cite="../howtobeawizard.html">
+            <p>“A wizard is never late …”</p>
+          </Ins>
+        </>
+      );
     }
     if (menuId === "Kbd") {
-      setSubScreen(<Kbd />);
+      setSubScreen(
+        <p>
+          Please press <Kbd>Ctrl</Kbd> + <Kbd>Shift</Kbd> + <Kbd>R</Kbd> to
+          re-render an MDN page.
+        </p>
+      );
     }
     if (menuId === "Label") {
-      setSubScreen(<Label />);
+      setSubScreen(
+        <div>
+          <Label htmlFor="cheese">Do you like cheese?</Label>
+          <input type="checkbox" name="cheese" id="cheese" />
+        </div>
+      );
     }
     if (menuId === "Legend") {
-      setSubScreen(<Legend />);
+      setSubScreen(
+        <fieldset>
+          <Legend>Choose your favorite monster</Legend>
+
+          <input type="radio" id="kraken" name="monster" value="K" />
+          <label htmlFor="kraken">Kraken</label>
+          <br />
+
+          <input type="radio" id="sasquatch" name="monster" value="S" />
+          <label htmlFor="sasquatch">Sasquatch</label>
+          <br />
+
+          <input type="radio" id="mothman" name="monster" value="M" />
+          <label htmlFor="mothman">Mothman</label>
+        </fieldset>
+      );
     }
     if (menuId === "Li") {
-      setSubScreen(<Li />);
+      setSubScreen(
+        <ul>
+          <Li>Neil Armstrong</Li>
+          <Li>Alan Bean</Li>
+          <Li>Peter Conrad</Li>
+          <Li>Edgar Mitchell</Li>
+          <Li>Alan Shepard</Li>
+        </ul>
+      );
     }
     if (menuId === "Link") {
       setSubScreen(<Link />);
     }
     if (menuId === "Main") {
-      setSubScreen(<Main />);
+      setSubScreen(
+        <>
+          <header>Gecko facts</header>
+
+          <main>
+            <p>
+              Geckos are a group of usually small, usually nocturnal lizards.
+              They are found on every continent except Antarctica.
+            </p>
+
+            <p>
+              Many species of gecko have adhesive toe pads which enable them to
+              climb walls and even windows.
+            </p>
+          </main>
+        </>
+      );
     }
     if (menuId === "Map") {
-      setSubScreen(<Map />);
+      setSubScreen(
+        <>
+          <map name="infographic">
+            <area
+              shape="poly"
+              coords="130,147,200,107,254,219,130,228"
+              href="https://developer.mozilla.org/docs/Web/HTML"
+              target="_blank"
+              alt="HTML"
+            />
+            <area
+              shape="poly"
+              coords="130,147,130,228,6,219,59,107"
+              href="https://developer.mozilla.org/docs/Web/CSS"
+              target="_blank"
+              alt="CSS"
+            />
+            <area
+              shape="poly"
+              coords="130,147,200,107,130,4,59,107"
+              href="https://developer.mozilla.org/docs/Web/JavaScript"
+              target="_blank"
+              alt="JavaScript"
+            />
+          </map>
+          <img
+            useMap="#infographic"
+            src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info2.png"
+            alt="MDN infographic"
+          />
+        </>
+      );
     }
     if (menuId === "Mark") {
-      setSubScreen(<Mark />);
+      setSubScreen(
+        <>
+          <p>Search results for "salamander":</p>
+
+          <hr />
+
+          <p>
+            Several species of <Mark>salamander</Mark> inhabit the temperate
+            rainforest of the Pacific Northwest.
+          </p>
+
+          <p>
+            Most <Mark>salamander</Mark>s are nocturnal, and hunt for insects,
+            worms, and other small creatures.
+          </p>
+        </>
+      );
     }
     if (menuId === "Marquee") {
       setSubScreen(<Marquee />);
     }
     if (menuId === "Menu") {
-      setSubScreen(<Menu />);
+      setSubScreen(
+        <div>
+          <a href="#">
+            NASA’s Webb Delivers Deepest Infrared Image of Universe Yet
+          </a>
+          <Menu>
+            <li>
+              <button id="save">Save for later</button>
+            </li>
+            <li>
+              <button id="share">Share this news</button>
+            </li>
+          </Menu>
+        </div>
+      );
     }
     if (menuId === "Meta") {
       setSubScreen(<Meta />);
     }
     if (menuId === "Meter") {
-      setSubScreen(<Meter />);
+      setSubScreen(
+        <>
+          <label htmlFor="fuel">Fuel level:</label>
+
+          <Meter
+            id="fuel"
+            min="0"
+            max="100"
+            low={33}
+            high={66}
+            optimum={80}
+            value="50"
+          >
+            at 50/100
+          </Meter>
+        </>
+      );
     }
     if (menuId === "Nav") {
-      setSubScreen(<Nav />);
+      setSubScreen(
+        <>
+          <Nav>
+            <ol>
+              <li>
+                <a href="#">Bikes</a>
+              </li>
+              <li>
+                <a href="#">BMX</a>
+              </li>
+              <li>Jump Bike 3000</li>
+            </ol>
+          </Nav>
+
+          <h1>Jump Bike 3000</h1>
+          <p>
+            This BMX bike is a solid step into the pro world. It looks as legit
+            as it rides and is built to polish your skills.
+          </p>
+        </>
+      );
     }
     if (menuId === "Nobr") {
       setSubScreen(<Nobr />);
@@ -653,31 +850,111 @@ const Basic: React.FC = () => {
       setSubScreen(<Noframes />);
     }
     if (menuId === "Noscript") {
-      setSubScreen(<Noscript />);
+      setSubScreen(
+        <Noscript>
+          <a href="https://www.mozilla.org/">External Link</a>
+        </Noscript>
+      );
     }
     if (menuId === "Object") {
-      setSubScreen(<Object />);
+      setSubScreen(
+        <Object
+          type="video/mp4"
+          data="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+          width="250"
+          height="200"
+        ></Object>
+      );
     }
     if (menuId === "Ol") {
-      setSubScreen(<Ol />);
+      setSubScreen(
+        <Ol>
+          <li>Mix flour, baking powder, sugar, and salt.</li>
+          <li>In another bowl, mix eggs, milk, and oil.</li>
+          <li>Stir both mixtures together.</li>
+          <li>Fill muffin tray 3/4 full.</li>
+          <li>Bake for 20 minutes.</li>
+        </Ol>
+      );
     }
     if (menuId === "Optgroup") {
-      setSubScreen(<Optgroup />);
+      setSubScreen(
+        <>
+          <label htmlFor="dino-select">Choose a dinosaur:</label>
+          <select id="dino-select">
+            <Optgroup label="Theropods">
+              <option>Tyrannosaurus</option>
+              <option>Velociraptor</option>
+              <option>Deinonychus</option>
+            </Optgroup>
+            <Optgroup label="Sauropods">
+              <option>Diplodocus</option>
+              <option>Saltasaurus</option>
+              <option>Apatosaurus</option>
+            </Optgroup>
+          </select>
+        </>
+      );
     }
     if (menuId === "Option") {
-      setSubScreen(<Option />);
+      setSubScreen(
+        <>
+          <label htmlFor="pet-select">Choose a pet:</label>
+
+          <select id="pet-select">
+            <Option value="">--Please choose an option--</Option>
+            <Option value="dog">Dog</Option>
+            <Option value="cat">Cat</Option>
+            <Option value="hamster">Hamster</Option>
+            <Option value="parrot">Parrot</Option>
+            <Option value="spider">Spider</Option>
+            <Option value="goldfish">Goldfish</Option>
+          </select>
+        </>
+      );
     }
     if (menuId === "Output") {
-      setSubScreen(<Output />);
+      setSubScreen(
+        <form>
+          <input type="range" id="b" name="b" value="50" /> +
+          <input type="number" id="a" name="a" value="10" /> =
+          <Output name="result" htmlFor="a b">
+            60
+          </Output>
+        </form>
+      );
     }
     if (menuId === "P") {
-      setSubScreen(<P />);
+      setSubScreen(
+        <>
+          <P>
+            Geckos are a group of usually small, usually nocturnal lizards. They
+            are found on every continent except Antarctica.
+          </P>
+
+          <P>
+            Some species live in houses where they hunt insects attracted by
+            artificial light.
+          </P>
+        </>
+      );
     }
     if (menuId === "Param") {
       setSubScreen(<Param />);
     }
     if (menuId === "Picture") {
-      setSubScreen(<Picture />);
+      setSubScreen(
+        <Picture>
+          <source
+            srcSet="/media/cc0-images/surfer-240-200.jpg"
+            media="(orientation: portrait)"
+          />
+          <img
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/surfer-240-200.jpg"
+            alt=""
+          />
+        </Picture>
+      );
     }
     if (menuId === "Plaintext") {
       setSubScreen(<Plaintext />);
@@ -1407,7 +1684,7 @@ const Basic: React.FC = () => {
           <button
             style={{ width: "150px" }}
             onClick={() => {
-              onMenu("BasIframeic");
+              onMenu("Iframe");
             }}
           >
             Iframe
@@ -1447,7 +1724,7 @@ const Basic: React.FC = () => {
           <button
             style={{ width: "150px" }}
             onClick={() => {
-              onMenu("BasInputDateic");
+              onMenu("InputDate");
             }}
           >
             InputDate
@@ -1647,7 +1924,7 @@ const Basic: React.FC = () => {
           <button
             style={{ width: "150px" }}
             onClick={() => {
-              onMenu("BasiKbdc");
+              onMenu("Kbd");
             }}
           >
             Kbd

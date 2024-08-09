@@ -2,9 +2,9 @@ import React from "react";
 
 export interface ParamProps {}
 
-const Param: React.FC<ParamProps> = (props) => {
+const Param = React.forwardRef<HTMLElement, ParamProps>((props, ref) => {
   //
-  return <> </>;
-};
+  return <>delete element</>;
+});
 
 export default Param;

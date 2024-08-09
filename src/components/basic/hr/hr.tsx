@@ -1,10 +1,14 @@
 import React from "react";
 
-export interface HrProps {}
+export interface HrProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties; 
+}
 
-const Hr: React.FC<HrProps> = (props) => {
+const Hr = React.forwardRef<HTMLHRElement, HrProps>((props, ref) => {
+  const { inlineStyle, classes } = props;
   //
-  return <hr />;
-};
+  return <hr className={classes} ref={ref} style={{ ...inlineStyle }}></hr>;
+});
 
 export default Hr;

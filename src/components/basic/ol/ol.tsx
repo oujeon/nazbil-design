@@ -1,10 +1,19 @@
 import React from "react";
 
-export interface OlProps {}
+export interface OlProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const Ol: React.FC<OlProps> = (props) => {
+const Ol = React.forwardRef<HTMLOListElement, OlProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
-  return <ol></ol>;
-};
+  return (
+    <ol className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </ol>
+  );
+});
 
 export default Ol;

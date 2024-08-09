@@ -1,10 +1,19 @@
 import React from "react";
 
-export interface MainProps {}
+export interface MainProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const Main : React.FC<MainProps> = (props) => {
+const Main = React.forwardRef<HTMLElement, MainProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
-  return <main></main>;
-};
+  return (
+    <main className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </main>
+  );
+});
 
 export default Main;
