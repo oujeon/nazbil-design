@@ -1,10 +1,19 @@
 import React from "react";
 
-export interface SupProps {}
+export interface SupProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const Sup: React.FC<SupProps> = (props) => {
+const Sup = React.forwardRef<HTMLElement, SupProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
-  return <sup></sup>;
-};
+  return (
+    <sup className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </sup>
+  );
+});
 
 export default Sup;

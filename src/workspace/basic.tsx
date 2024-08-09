@@ -121,7 +121,6 @@ import {
   Section,
   Select,
   Slot,
-  Small,
   Source,
   Span,
   Strike,
@@ -131,8 +130,8 @@ import {
   Summary,
   Sup,
   Table,
+  Tbody,
   Td,
-  Template,
   Textarea,
   Tfoot,
   Th,
@@ -963,127 +962,640 @@ const Basic: React.FC = () => {
       setSubScreen(<Portal />);
     }
     if (menuId === "Pre") {
-      setSubScreen(<Pre />);
+      setSubScreen(
+        <Pre>
+          L TE A A C V R A DOU LOU REUSE QUE TU PORTES ET QUI T' ORNE O CI
+          VILISÉ OTE- TU VEUX LA BIEN SI RESPI RER - Apollinaire
+        </Pre>
+      );
     }
     if (menuId === "Progress") {
-      setSubScreen(<Progress />);
+      setSubScreen(
+        <Progress id="file" max="100" value="70">
+          70%
+        </Progress>
+      );
     }
     if (menuId === "Q") {
-      setSubScreen(<Q />);
+      setSubScreen(
+        <p>
+          When Dave asks HAL to open the pod bay door, HAL answers:
+          <Q cite="https://www.imdb.com/title/tt0062622/quotes/?item=qt0396921&ref_=ext_shr_lnk">
+            I'm sorry, Dave. I'm afraid I can't do that.
+          </Q>
+        </p>
+      );
     }
     if (menuId === "Rb") {
       setSubScreen(<Rb />);
     }
     if (menuId === "Rp") {
-      setSubScreen(<Rp />);
+      setSubScreen(
+        <ruby>
+          漢 <Rp>(</Rp>
+          <rt>kan</rt>
+          <Rp>)</Rp> 字 <Rp>(</Rp>
+          <rt>ji</rt>
+          <Rp>)</Rp>
+        </ruby>
+      );
     }
     if (menuId === "Rt") {
-      setSubScreen(<Rt />);
+      setSubScreen(
+        <ruby>
+          漢 <rp>(</rp>
+          <Rt>kan</Rt>
+          <rp>)</rp> 字 <rp>(</rp>
+          <Rt>ji</Rt>
+          <rp>)</rp>
+        </ruby>
+      );
     }
     if (menuId === "Rtc") {
       setSubScreen(<Rtc />);
     }
     if (menuId === "Ruby") {
-      setSubScreen(<Ruby />);
+      setSubScreen(
+        <Ruby>
+          明日 <rp>(</rp>
+          <rt>Ashita</rt>
+          <rp>)</rp>
+        </Ruby>
+      );
     }
     if (menuId === "S") {
-      setSubScreen(<S />);
+      setSubScreen(
+        <>
+          <p>
+            <S>
+              There will be a few tickets available at the box office tonight.
+            </S>
+          </p>
+
+          <p>SOLD OUT!</p>
+        </>
+      );
     }
     if (menuId === "Samp") {
-      setSubScreen(<Samp />);
+      setSubScreen(
+        <>
+          <p>
+            I was trying to boot my computer, but I got this hilarious message:
+          </p>
+
+          <p>
+            <Samp>
+              Keyboard not found <br />
+              Press F1 to continue
+            </Samp>
+          </p>
+        </>
+      );
     }
     if (menuId === "Script") {
       setSubScreen(<Script />);
     }
     if (menuId === "Search") {
-      setSubScreen(<Search />);
+      setSubScreen(
+        <header>
+          <h1>Movie website</h1>
+          <Search>
+            <form action="./search/">
+              <label htmlFor="movie">Find a Movie</label>
+              <input type="search" id="movie" name="q" />
+              <button type="submit">Search</button>
+            </form>
+          </Search>
+        </header>
+      );
     }
     if (menuId === "Section") {
-      setSubScreen(<Section />);
+      setSubScreen(
+        <>
+          <h1>Choosing an Apple</h1>
+          <Section>
+            <h2>Introduction</h2>
+            <p>
+              This document provides a guide to help with the important task of
+              choosing the correct Apple.
+            </p>
+          </Section>
+
+          <Section>
+            <h2>Criteria</h2>
+            <p>
+              There are many different criteria to be considered when choosing
+              an Apple — size, color, firmness, sweetness, tartness...
+            </p>
+          </Section>
+        </>
+      );
     }
     if (menuId === "Select") {
-      setSubScreen(<Select />);
+      setSubScreen(
+        <>
+          <label htmlFor="pet-select">Choose a pet:</label>
+
+          <Select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+          </Select>
+        </>
+      );
     }
     if (menuId === "Slot") {
-      setSubScreen(<Slot />);
+      setSubScreen(
+        <div>
+          <h4>Attributes</h4>
+          <Slot name="attributes">
+            <p>None</p>
+          </Slot>
+        </div>
+      );
     }
     if (menuId === "Small") {
-      setSubScreen(<Small />);
+      setSubScreen(
+        <>
+          <p>
+            MDN Web Docs is a learning platform for Web technologies and the
+            software that powers the Web.
+          </p>
+
+          <hr />
+
+          <p>
+            <small>
+              The content is licensed under a Creative Commons
+              Attribution-ShareAlike 2.5 Generic License.
+            </small>
+          </p>
+        </>
+      );
     }
     if (menuId === "Source") {
-      setSubScreen(<Source />);
+      setSubScreen(
+        <video controls width="250" height="200" muted>
+          <Source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+            type="video/webm"
+          />
+          <Source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+            type="video/mp4"
+          />
+          Download the
+          <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm">
+            WEBM
+          </a>
+          or
+          <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm">
+            MP4
+          </a>
+          video.
+        </video>
+      );
     }
     if (menuId === "Span") {
-      setSubScreen(<Span />);
+      setSubScreen(
+        <>
+          <p>
+            Add the <Span>basil</Span>, <Span>pine nuts</Span> and
+            <Span>garlic</Span> to a blender and blend into a paste.
+          </p>
+
+          <p>
+            Gradually add the <Span>olive oil</Span> while running the blender
+            slowly.
+          </p>
+        </>
+      );
     }
     if (menuId === "Strike") {
       setSubScreen(<Strike />);
     }
     if (menuId === "Strong") {
-      setSubScreen(<Strong />);
+      setSubScreen(
+        <p>
+          ... the most important rule, the rule you can never forget, no matter
+          how much he cries, no matter how much he begs:
+          <Strong>never feed him after midnight</Strong>.
+        </p>
+      );
     }
     if (menuId === "Style") {
       setSubScreen(<Style />);
     }
     if (menuId === "Sub") {
-      setSubScreen(<Sub />);
+      setSubScreen(
+        <p>
+          Almost every developer's favorite molecule is C<Sub>8</Sub>H
+          <Sub>10</Sub>N<Sub>4</Sub>O<Sub>2</Sub>, also known as "caffeine."
+        </p>
+      );
     }
     if (menuId === "Summary") {
-      setSubScreen(<Summary />);
+      setSubScreen(
+        <details>
+          <Summary>
+            I have keys but no doors. I have space but no room. You can enter
+            but can’t leave. What am I?
+          </Summary>
+          A keyboard.
+        </details>
+      );
     }
     if (menuId === "Sup") {
-      setSubScreen(<Sup />);
+      setSubScreen(
+        <>
+          <p>
+            The <em>Pythagorean theorem</em> is often expressed as the following
+            equation:
+          </p>
+
+          <p>
+            <var>
+              a<Sup>2</Sup>
+            </var>
+            +
+            <var>
+              b<Sup>2</Sup>
+            </var>
+            =
+            <var>
+              c<Sup>2</Sup>
+            </var>
+          </p>
+        </>
+      );
     }
     if (menuId === "Table") {
-      setSubScreen(<Table />);
+      setSubScreen(
+        <Table>
+          <caption>Front-end web developer course 2021</caption>
+          <thead>
+            <tr>
+              <th scope="col">Person</th>
+              <th scope="col">Most interest in</th>
+              <th scope="col">Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Chris</th>
+              <td>HTML tables</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <th scope="row">Dennis</th>
+              <td>Web accessibility</td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <th scope="row">Sarah</th>
+              <td>JavaScript frameworks</td>
+              <td>29</td>
+            </tr>
+            <tr>
+              <th scope="row">Karen</th>
+              <td>Web performance</td>
+              <td>36</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colSpan={2}>
+                Average age
+              </th>
+              <td>33</td>
+            </tr>
+          </tfoot>
+        </Table>
+      );
+    }
+
+    if (menuId === "Tbody") {
+      setSubScreen(
+        <table>
+          <caption>Council budget (in £) 2018</caption>
+          <thead>
+            <tr>
+              <th scope="col">Items</th>
+              <th scope="col">Expenditure</th>
+            </tr>
+          </thead>
+          <Tbody>
+            <tr>
+              <th scope="row">Donuts</th>
+              <td>3,000</td>
+            </tr>
+            <tr>
+              <th scope="row">Stationery</th>
+              <td>18,000</td>
+            </tr>
+          </Tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Totals</th>
+              <td>21,000</td>
+            </tr>
+          </tfoot>
+        </table>
+      );
     }
     if (menuId === "Td") {
-      setSubScreen(<Td />);
+      setSubScreen(
+        <table>
+          <caption>Alien football stars</caption>
+          <tr>
+            <th scope="col">Player</th>
+            <th scope="col">Gloobles</th>
+            <th scope="col">Za'taak</th>
+          </tr>
+          <tr>
+            <th scope="row">TR-7</th>
+            <Td>7</Td>
+            <Td>4,569</Td>
+          </tr>
+          <tr>
+            <th scope="row">Khiresh Odo</th>
+            <Td>7</Td>
+            <Td>7,223</Td>
+          </tr>
+          <tr>
+            <th scope="row">Mia Oolong</th>
+            <Td>9</Td>
+            <Td>6,219</Td>
+          </tr>
+        </table>
+      );
     }
     if (menuId === "Template") {
-      setSubScreen(<Template />);
+      setSubScreen(
+        <>
+          <table id="producttable">
+            <thead>
+              <tr>
+                <td>UPC_Code</td>
+                <td>Product_Name</td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <template id="productrow">
+            <tr>
+              <td>111</td>
+              <td>2222</td>
+            </tr>
+          </template>
+        </>
+      );
     }
     if (menuId === "Textarea") {
-      setSubScreen(<Textarea />);
+      setSubScreen(
+        <>
+          <label htmlFor="story">Tell us your story:</label>
+
+          <Textarea id="story" name="story" rows={5} cols={33}>
+            It was a dark and stormy night...
+          </Textarea>
+        </>
+      );
     }
     if (menuId === "Tfoot") {
-      setSubScreen(<Tfoot />);
+      setSubScreen(
+        <table>
+          <caption>Council budget (in £) 2018</caption>
+          <thead>
+            <tr>
+              <th scope="col">Items</th>
+              <th scope="col">Expenditure</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Donuts</th>
+              <td>3,000</td>
+            </tr>
+            <tr>
+              <th scope="row">Stationery</th>
+              <td>18,000</td>
+            </tr>
+          </tbody>
+          <Tfoot>
+            <tr>
+              <th scope="row">Totals</th>
+              <td>21,000</td>
+            </tr>
+          </Tfoot>
+        </table>
+      );
     }
     if (menuId === "Th") {
-      setSubScreen(<Th />);
+      setSubScreen(
+        <table>
+          <caption>Alien football stars</caption>
+          <tr>
+            <Th scope="col">Player</Th>
+            <Th scope="col">Gloobles</Th>
+            <Th scope="col">Za'taak</Th>
+          </tr>
+          <tr>
+            <Th scope="row">TR-7</Th>
+            <td>7</td>
+            <td>4,569</td>
+          </tr>
+          <tr>
+            <Th scope="row">Khiresh Odo</Th>
+            <td>7</td>
+            <td>7,223</td>
+          </tr>
+          <tr>
+            <Th scope="row">Mia Oolong</Th>
+            <td>9</td>
+            <td>6,219</td>
+          </tr>
+        </table>
+      );
     }
     if (menuId === "Thead") {
-      setSubScreen(<Thead />);
+      setSubScreen(
+        <table>
+          <caption>Council budget (in £) 2018</caption>
+          <Thead>
+            <tr>
+              <th scope="col">Items</th>
+              <th scope="col">Expenditure</th>
+            </tr>
+          </Thead>
+          <tbody>
+            <tr>
+              <th scope="row">Donuts</th>
+              <td>3,000</td>
+            </tr>
+            <tr>
+              <th scope="row">Stationery</th>
+              <td>18,000</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Totals</th>
+              <td>21,000</td>
+            </tr>
+          </tfoot>
+        </table>
+      );
     }
     if (menuId === "Time") {
-      setSubScreen(<Time />);
+      setSubScreen(
+        <>
+          <p>
+            The Cure will be celebrating their 40th anniversary on
+            <Time datetime="2018-07-07">July 7</Time> in London's Hyde Park.
+          </p>
+
+          <p>
+            The concert starts at <Time datetime="20:00">20:00</Time> and you'll
+            be able to enjoy the band for at least
+            <Time datetime="PT2H30M">2h 30m</Time>.
+          </p>
+        </>
+      );
     }
     if (menuId === "Title") {
       setSubScreen(<Title />);
     }
     if (menuId === "Tr") {
-      setSubScreen(<Tr />);
+      setSubScreen(
+        <table>
+          <caption>Alien football stars</caption>
+          <Tr>
+            <th scope="col">Player</th>
+            <th scope="col">Gloobles</th>
+            <th scope="col">Za'taak</th>
+          </Tr>
+          <Tr>
+            <th scope="row">TR-7</th>
+            <td>7</td>
+            <td>4,569</td>
+          </Tr>
+          <Tr>
+            <th scope="row">Khiresh Odo</th>
+            <td>7</td>
+            <td>7,223</td>
+          </Tr>
+          <Tr>
+            <th scope="row">Mia Oolong</th>
+            <td>9</td>
+            <td>6,219</td>
+          </Tr>
+        </table>
+      );
     }
     if (menuId === "Track") {
-      setSubScreen(<Track />);
+      setSubScreen(
+        <video
+          controls
+          src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4"
+        >
+          <Track
+            kind="captions"
+            srcLang="en"
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4"
+          />
+          Download the
+          <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4">
+            MP4
+          </a>
+          video, and
+          <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4t">
+            subtitles
+          </a>
+          .
+        </video>
+      );
     }
     if (menuId === "Tt") {
       setSubScreen(<Tt />);
     }
     if (menuId === "U") {
-      setSubScreen(<U />);
+      setSubScreen(
+        <p>
+          You could use this element to highlight <U>speling</U> mistakes, so
+          the writer can <U>corect</U> them.
+        </p>
+      );
     }
     if (menuId === "Ul") {
-      setSubScreen(<Ul />);
+      setSubScreen(
+        <Ul>
+          <li>Milk</li>
+          <li>
+            Cheese
+            <Ul>
+              <li>Blue cheese</li>
+              <li>Feta</li>
+            </Ul>
+          </li>
+        </Ul>
+      );
     }
     if (menuId === "Var") {
-      setSubScreen(<Var />);
+      setSubScreen(
+        <p>
+          The volume of a box is <Var>l</Var> × <Var>w</Var> × <Var>h</Var>,
+          where <Var>l</Var> represents the length,
+          <Var>w</Var> the width and <Var>h</Var> the height of the box.
+        </p>
+      );
     }
     if (menuId === "Video") {
-      setSubScreen(<Video />);
+      setSubScreen(
+        <Video width="250">
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+            type="video/webm"
+          />
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+            type="video/mp4"
+          />
+          Download the
+          <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm">
+            WEBM
+          </a>
+          or
+          <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm">
+            MP4
+          </a>
+          video.
+        </Video>
+      );
     }
     if (menuId === "Wbr") {
-      setSubScreen(<Wbr />);
+      setSubScreen(
+        <div id="example-paragraphs">
+          <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+          <p>
+            Fernstraßen
+            <Wbr />
+            bau
+            <Wbr />
+            privat
+            <Wbr />
+            finanzierungs
+            <Wbr />
+            gesetz
+          </p>
+          <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+        </div>
+      );
     }
     if (menuId === "Xmp") {
       setSubScreen(<Xmp />);
@@ -2438,6 +2950,16 @@ const Basic: React.FC = () => {
             }}
           >
             Table
+          </button>
+        </div>
+        <div className="menu_box">
+          <button
+            style={{ width: "150px" }}
+            onClick={() => {
+              onMenu("Tbody");
+            }}
+          >
+            Tbody
           </button>
         </div>
         <div className="menu_box">

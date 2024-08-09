@@ -2,9 +2,9 @@ import React from "react";
 
 export interface RtcProps {}
 
-const Rtc: React.FC<RtcProps> = (props) => {
+const Rtc = React.forwardRef<HTMLElement, RtcProps>((props, ref) => {
   //
-  return <>empty</>;
-};
+  return <>delete element</>;
+});
 
 export default Rtc;

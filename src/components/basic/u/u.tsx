@@ -1,10 +1,19 @@
 import React from "react";
 
-export interface UProps {}
+export interface UProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const U: React.FC<UProps> = (props) => {
+const U = React.forwardRef<HTMLElement, UProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
-  return <u />;
-};
+  return (
+    <u className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </u>
+  );
+});
 
 export default U;

@@ -2,9 +2,9 @@ import React from "react";
 
 export interface ScriptProps {}
 
-const Script: React.FC<ScriptProps> = (props) => {
+const Script = React.forwardRef<HTMLElement, ScriptProps>((props, ref) => {
   //
-  return <script></script>;
-};
+  return <>empty</>;
+});
 
 export default Script;

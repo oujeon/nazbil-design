@@ -2,9 +2,9 @@ import React from "react";
 
 export interface TtProps {}
 
-const Tt: React.FC<TtProps> = (props) => {
+const Tt = React.forwardRef<HTMLElement, TtProps>((props, ref) => {
   //
-  return <>empty</>;
-};
+  return <>delete element</>;
+});
 
 export default Tt;

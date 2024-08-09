@@ -2,9 +2,9 @@ import React from "react";
 
 export interface TitleProps {}
 
-const Title: React.FC<TitleProps> = (props) => {
+const Title = React.forwardRef<HTMLElement, TitleProps>((props, ref) => {
   //
-  return <title />;
-};
+  return <>empty</>;
+});
 
 export default Title;

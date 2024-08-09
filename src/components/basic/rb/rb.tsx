@@ -1,13 +1,10 @@
 import React from "react";
 
-export interface RbProps { 
-}
+export interface RbProps {}
 
-const Rb : React.FC<RbProps> = (props) => { 
+const Rb = React.forwardRef<HTMLElement, RbProps>((props, ref) => {
   //
-  return (
-    <>empty</>
-  );
-};
+  return <>delete element</>;
+});
 
 export default Rb;

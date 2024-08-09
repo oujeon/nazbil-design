@@ -1,10 +1,20 @@
 import React from "react";
 
-export interface QProps {}
+export interface QProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+  cite?: string;
+}
 
-const Q: React.FC<QProps> = (props) => {
+const Q = React.forwardRef<HTMLQuoteElement, QProps>((props, ref) => {
+  const { inlineStyle, classes, children, cite } = props;
   //
-  return <q></q>;
-};
+  return (
+    <q cite={cite} className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </q>
+  );
+});
 
 export default Q;

@@ -1,10 +1,19 @@
 import React from "react";
 
-export interface UlProps {}
+export interface UlProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const Ul: React.FC<UlProps> = (props) => {
+const Ul = React.forwardRef<HTMLUListElement, UlProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
-  return <ul />;
-};
+  return (
+    <ul className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </ul>
+  );
+});
 
 export default Ul;

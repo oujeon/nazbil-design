@@ -2,9 +2,9 @@ import React from "react";
 
 export interface StyleProps {}
 
-const Style: React.FC<StyleProps> = (props) => {
+const Style = React.forwardRef<HTMLElement, StyleProps>((props, ref) => {
   //
-  return <style></style>;
-};
+  return <>empty</>;
+});
 
 export default Style;

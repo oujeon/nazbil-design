@@ -1,21 +1,21 @@
 import React from "react";
 
-export interface TheadProps {
+export interface TbodyProps {
   classes?: string;
   inlineStyle?: React.CSSProperties;
   children?: React.ReactNode;
 }
 
-const Thead = React.forwardRef<HTMLTableSectionElement, TheadProps>(
+const Tbody = React.forwardRef<HTMLTableSectionElement, TbodyProps>(
   (props, ref) => {
     const { inlineStyle, classes, children } = props;
     //
     return (
-      <thead className={classes} ref={ref} style={{ ...inlineStyle }}>
+      <tbody className={classes} ref={ref} style={{ ...inlineStyle }}>
         {children}
-      </thead>
+      </tbody>
     );
   }
 );
 
-export default Thead;
+export default Tbody;

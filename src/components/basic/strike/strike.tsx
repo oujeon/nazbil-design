@@ -2,9 +2,9 @@ import React from "react";
 
 export interface StrikeProps {}
 
-const Strike: React.FC<StrikeProps> = (props) => {
+const Strike = React.forwardRef<HTMLElement, StrikeProps>((props, ref) => {
   //
-  return <>empty</>;
-};
+  return <>delete element</>;
+});
 
 export default Strike;

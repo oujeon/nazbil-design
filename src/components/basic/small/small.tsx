@@ -1,10 +1,19 @@
 import React from "react";
 
-export interface SmallProps {}
+export interface SmallProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const Small: React.FC<SmallProps> = (props) => {
+const Small = React.forwardRef<HTMLElement, SmallProps>((props, ref) => {
+  const { inlineStyle, classes, children } = props;
   //
-  return <small> </small>;
-};
+  return (
+    <small className={classes} ref={ref} style={{ ...inlineStyle }}>
+      {children}
+    </small>
+  );
+});
 
 export default Small;
