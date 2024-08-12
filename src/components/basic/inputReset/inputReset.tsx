@@ -1,10 +1,25 @@
 import React from "react";
 
-export interface InputResetProps {}
+export interface InputResetProps {
+  classes?: string;
+  inlineStyle?: React.CSSProperties;
+  children?: React.ReactNode;
+}
 
-const InputReset: React.FC<InputResetProps> = (props) => {
-  //
-  return <input type="reset" />;
-};
+const InputReset = React.forwardRef<HTMLInputElement, InputResetProps>(
+  (props, ref) => {
+    const { inlineStyle, classes } = props;
+    //
+    //
+    return (
+      <input
+        type="reset"
+        className={classes}
+        ref={ref}
+        style={{ ...inlineStyle }}
+      />
+    );
+  }
+);
 
 export default InputReset;

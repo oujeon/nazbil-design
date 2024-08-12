@@ -59,6 +59,7 @@ import {
   I,
   Iframe,
   Img,
+  Input,
   InputCheckbox,
   InputColor,
   InputDate,
@@ -337,6 +338,9 @@ const Application: React.FC = () => {
     }
     if (menuId === "Img") {
       setSubScreen(<Img />);
+    }
+    if (menuId === "Input") {
+      setSubScreen(<Input />);
     }
     if (menuId === "InputCheckbox") {
       setSubScreen(<InputCheckbox />);
@@ -1221,6 +1225,16 @@ const Application: React.FC = () => {
             }}
           >
             Img
+          </button>
+        </div>
+        <div className="menu_box">
+          <button
+            style={{ width: "150px" }}
+            onClick={() => {
+              onMenu("Input");
+            }}
+          >
+            Input
           </button>
         </div>
         <div className="menu_box">

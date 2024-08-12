@@ -58,6 +58,7 @@ export { default as Html } from "components/basic/html";
 export { default as I } from "components/basic/i";
 export { default as Iframe } from "components/basic/iframe";
 export { default as Img } from "components/basic/img";
+export { default as Input } from "components/basic/input";
 export { default as InputCheckbox } from "components/basic/inputCheckbox";
 export { default as InputColor } from "components/basic/inputColor";
 export { default as InputDate } from "components/basic/inputDate";
