@@ -1,16 +1,16 @@
 import React from "react";
 
-export interface AProps {
+type AProps = {
   href: string;
   text: string;
   target?: string;
-  classes?: string;
-  inlineStyle?: React.CSSProperties;
+  className?: string;
+  style?: React.CSSProperties;
   onClick?: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
-}
+};
 
 const A = React.forwardRef<HTMLAnchorElement, AProps>((props, ref) => {
-  const { href, target, text, inlineStyle, classes, onClick } = props;
+  const { href, target, text, style, className, onClick } = props;
   //
 
   //
@@ -22,9 +22,9 @@ const A = React.forwardRef<HTMLAnchorElement, AProps>((props, ref) => {
     <a
       href={href}
       target={target}
-      className={classes}
+      className={className}
       ref={ref}
-      style={{ ...inlineStyle }}
+      style={{ ...style }}
       onClick={handleClick}
     >
       {text}
